@@ -1,0 +1,1770 @@
+2015-10-07 16:09:31.708+0000 INFO  [o.n.s.CommunityNeoServer]: Setting startup timeout to: 120000ms based on 120000
+2015-10-07 16:09:32.045+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-10-07 16:09:32.248+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-10-07 16:09:32.260+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-10-07 16:09:32.277+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.keystore.location=data/keystore
+2015-10-07 16:09:32.277+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.db.tuning.properties=conf/neo4j.properties
+2015-10-07 16:09:32.277+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.database.location=data/graph.db
+2015-10-07 16:09:32.277+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.port=7474
+2015-10-07 16:09:32.277+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db
+2015-10-07 16:09:32.277+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.key.location=conf/ssl/snakeoil.key
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: dbms.querylog.filename=data/log/queries.log
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.cert.location=conf/ssl/snakeoil.cert
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.enabled=true
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.enabled=false
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.port=7473
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.rrdb.location=data/rrd
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: remote_shell_enabled=true
+2015-10-07 16:09:32.278+0000 INFO  [o.n.k.i.DiagnosticsManager]: dbms.security.auth_enabled=true
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-10-07 16:09:32.280+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-10-07 16:09:32.281+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-10-07 16:09:32.281+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-10-07 16:09:32.281+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-10-07 16:09:32.287+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 4.00 GB
+2015-10-07 16:09:32.288+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 21.42 MB
+2015-10-07 16:09:32.289+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 3.61 GB
+2015-10-07 16:09:32.290+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 2.00 GB
+2015-10-07 16:09:32.290+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 1.08 GB
+2015-10-07 16:09:32.291+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-10-07 16:09:32.291+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 33.76 MB
+2015-10-07 16:09:32.291+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 61.88 MB
+2015-10-07 16:09:32.292+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 990.75 MB
+2015-10-07 16:09:32.299+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2015-10-07 16:09:32.299+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2015-10-07 16:09:32.302+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=741.31 kB, max=48.00 MB, threshold=0.00 B
+2015-10-07 16:09:32.302+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=17.06 MB, used=2.23 MB, max=266.25 MB, threshold=?
+2015-10-07 16:09:32.303+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=2.13 MB, used=2.13 MB, max=33.25 MB, threshold=?
+2015-10-07 16:09:32.304+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=42.69 MB, used=23.76 MB, max=691.25 MB, threshold=0.00 B
+2015-10-07 16:09:32.304+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=12.49 MB, max=82.00 MB, threshold=0.00 B
+2015-10-07 16:09:32.304+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-10-07 16:09:32.306+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.10.5; arch: x86_64; cpus: 4
+2015-10-07 16:09:32.307+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2015-10-07 16:09:32.307+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 86
+2015-10-07 16:09:32.307+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 1055@LucTuyetKy.local
+2015-10-07 16:09:32.307+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-10-07 16:09:32.307+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Asia/Ho_Chi_Minh
+2015-10-07 16:09:32.308+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-10-07 16:09:32.308+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-10-07 16:09:32.308+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-10-07 16:09:32.308+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 24.79-b02
+2015-10-07 16:09:32.308+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-10-07 16:09:32.309+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=tarball, -Dneo4j.home=/Applications/xampp/xamppfiles/htdocs/code/neo4j, -Dneo4j.instance=/Applications/xampp/xamppfiles/htdocs/code/neo4j, -Dfile.encoding=UTF-8]
+2015-10-07 16:09:32.309+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-10-07 16:09:32.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-1.9-2.0.4.jar
+2015-10-07 16:09:32.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2015-10-07 16:09:32.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/scala-library-2.10.5.jar
+2015-10-07 16:09:32.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-jmx-2.2.5.jar
+2015-10-07 16:09:32.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-beanutils-1.8.3.jar
+2015-10-07 16:09:32.313+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/logback-access-1.1.2.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-io-9.2.4.v20141103.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jackson-jaxrs-1.9.13.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-import-tool-2.2.5.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-multipart-1.19.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/lucene-core-3.6.2.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/janino-2.6.1.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/bcprov-jdk16-140.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-consistency-check-2.2.5.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-unsafe-2.2.5.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-lang-2.6.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-2.0-2.0.4.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-util-9.2.4.v20141103.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/server-api-2.2.5.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-servlet-9.2.4.v20141103.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2015-10-07 16:09:32.314+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/logback-classic-1.1.2.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-2.2.5.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/rrd4j-2.2.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-security-9.2.4.v20141103.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-kernel-2.2.5.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-xml-9.2.4.v20141103.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-digester-2.1.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-server-9.2.4.v20141103.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-graph-algo-2.2.5.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/javax.servlet-api-3.1.0.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jcl-over-slf4j-1.7.7.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-primitive-collections-2.2.5.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/mimepull-1.9.3.jar
+2015-10-07 16:09:32.315+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/parboiled-scala_2.10-1.1.7.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/concurrentlinkedhashmap-lru-1.4.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/opencsv-2.3.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-servlet-1.19.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/conf/
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-configuration-1.10.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/rhino-1.7R4.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-lucene-index-2.2.5.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jackson-core-asl-1.9.13.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-compiler-2.6.1.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-csv-2.2.5.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-webapp-9.2.4.v20141103.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/scala-reflect-2.10.5.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-graph-matching-2.2.5.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-2.1-2.1.8.jar
+2015-10-07 16:09:32.316+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jsr311-api-1.1.2.r612.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-core-1.19.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-http-9.2.4.v20141103.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/parboiled-core-1.1.7.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/logback-core-1.1.2.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-server-1.19.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-io-2.4.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-shell-2.2.5.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-2.2-2.2.5.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-udc-2.2.5.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-io-2.2.5.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-logging-1.1.1.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jackson-mapper-asl-1.9.13.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/slf4j-api-1.7.7.jar
+2015-10-07 16:09:32.317+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/ha/Library/Java/Extensions
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Applications/XAMPP/xamppfiles/htdocs/code/neo4j
+2015-10-07 16:09:32.318+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = US
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Applications/XAMPP/xamppfiles/htdocs/code/neo4j
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.ext.udc.source = tarball
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-10-07 16:09:32.319+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/ha
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Asia/Ho_Chi_Minh
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = ha
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = en
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Applications/xampp/xamppfiles/htdocs/code/neo4j
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Applications/xampp/xamppfiles/htdocs/code/neo4j
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2015-10-07 16:09:32.320+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-10-07 16:09:32.326+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface awdl0:
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:e4d8:c1ff:fecb:855a%8
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface en0:
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:9ef3:87ff:fec5:b5fc%4
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.1.71
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-10-07 16:09:32.327+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-10-07 16:09:32.638+0000 INFO  [o.n.k.i.s.StoreFactory]: Creating new db @ /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore
+2015-10-07 16:09:32.695+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db.names, truncating at 64 vs file size 64
+2015-10-07 16:09:32.698+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db, truncating at 28 vs file size 28
+2015-10-07 16:09:32.709+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db.names, truncating at 64 vs file size 64
+2015-10-07 16:09:32.710+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db, truncating at 22 vs file size 22
+2015-10-07 16:09:32.790+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db.names, truncating at 64 vs file size 64
+2015-10-07 16:09:32.793+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db, truncating at 28 vs file size 28
+2015-10-07 16:09:32.794+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db.names, truncating at 64 vs file size 64
+2015-10-07 16:09:32.795+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db, truncating at 22 vs file size 22
+2015-10-07 16:09:32.797+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.strings, truncating at 154 vs file size 154
+2015-10-07 16:09:32.798+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.index.keys, truncating at 64 vs file size 64
+2015-10-07 16:09:32.799+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.index, truncating at 25 vs file size 25
+2015-10-07 16:09:32.801+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.arrays, truncating at 153 vs file size 153
+2015-10-07 16:09:32.802+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db, truncating at 20 vs file size 20
+2015-10-07 16:09:32.803+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshipstore.db, truncating at 24 vs file size 24
+2015-10-07 16:09:32.804+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.nodestore.db.labels, truncating at 93 vs file size 93
+2015-10-07 16:09:32.805+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.nodestore.db, truncating at 16 vs file size 16
+2015-10-07 16:09:32.806+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.schemastore.db, truncating at 82 vs file size 82
+2015-10-07 16:09:32.807+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshipgroupstore.db, truncating at 54 vs file size 54
+2015-10-07 16:09:32.809+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore, truncating at 114 vs file size 8190
+2015-10-07 16:09:33.082+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-10-07 16:09:33.129+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: No lucene scan store index found, this might just be first use. Preparing to rebuild.
+2015-10-07 16:09:33.250+0000 INFO  [o.n.k.NeoStoreDataSource]: Opened logical log [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.transaction.db.0] version=0, lastTxId=1 (clean)
+2015-10-07 16:09:33.259+0000 WARN  [o.n.k.i.s.StoreFactory]: Missing counts store, rebuilding it.
+2015-10-07 16:09:33.393+0000 DEBUG [o.n.k.i.a.i.IndexingService]: Applying recovered updates: hopscotch-table[LongKeyTable|capacity:32, size:0, usage:0.000000]
+2015-10-07 16:09:33.397+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Rebuilding lucene scan store, this may take a while
+2015-10-07 16:09:33.399+0000 INFO  [o.n.k.a.i.i.LuceneLabelScanStore]: Lucene scan store rebuilt (roughly -1 nodes)
+2015-10-07 16:09:33.408+0000 INFO  [o.n.k.KernelHealth]: Kernel health set to OK
+2015-10-07 16:09:34.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-10-07 16:09:34.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1444234172637, randomId=-4745743866949650044, storeVersion=14969031248344582, upgradeTime=1444234172637, upgradeId=1}
+2015-10-07 16:09:34.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5
+2015-10-07 16:09:34.739+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-10-07 16:09:34.749+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.749+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.749+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.8; revision: 2.1.8:2.1-maint:687/5c83ce3a5ddf33259593f719153ce71a6fe89fc7
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Server API (server-api), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Import Command Line Tool (neo4j-import-tool), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Server (neo4j-server), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.2 (neo4j-cypher-compiler-2.2), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Consistency Checker (neo4j-consistency-check), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-07 16:09:34.750+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-10-07 16:09:34.752+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.5
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-10-07 16:09:34.753+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=1 high=0
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=0 high=-1
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=0 high=-1
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=0 high=-1
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=0 high=-1
+2015-10-07 16:09:34.754+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=0 high=-1
+2015-10-07 16:09:34.755+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=0 high=-1
+2015-10-07 16:09:34.755+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=1 high=0
+2015-10-07 16:09:34.755+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=1 high=0
+2015-10-07 16:09:34.755+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-10-07 16:09:34.755+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-10-07 16:09:34.755+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-10-07 16:09:34.756+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 120135221248 / 51674062848 / 43
+Storage files: (filename : modification date - size)
+2015-10-07 16:09:34.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-10-07 16:09:34.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-10-07T23:09:33+0700 - 0.00 B
+2015-10-07 16:09:34.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-10-07T23:09:34+0700 - 39.01 kB
+2015-10-07 16:09:34.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-10-07T23:09:32+0700 - 99.00 B
+2015-10-07 16:09:34.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.counts.db.a: 2015-10-07T23:09:33+0700 - 114.00 B
+2015-10-07 16:09:34.759+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.759+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.759+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.759+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-10-07T23:09:32+0700 - 38.00 B
+2015-10-07 16:09:34.760+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.760+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.760+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.761+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-10-07T23:09:32+0700 - 68.00 B
+2015-10-07 16:09:34.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-10-07T23:09:32+0700 - 128.00 B
+2015-10-07 16:09:34.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.763+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-10-07T23:09:32+0700 - 38.00 B
+2015-10-07 16:09:34.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-10-07T23:09:32+0700 - 128.00 B
+2015-10-07 16:09:34.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.764+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-10-07T23:09:32+0700 - 25.00 B
+2015-10-07 16:09:34.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.767+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-10-07T23:09:32+0700 - 38.00 B
+2015-10-07 16:09:34.767+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.767+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-10-07T23:09:32+0700 - 64.00 B
+2015-10-07 16:09:34.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-10-07T23:09:32+0700 - 9.00 B
+2015-10-07 16:09:34.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.transaction.db.0: 2015-10-07T23:09:33+0700 - 16.00 B
+2015-10-07 16:09:34.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-10-07 16:09:34.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-10-07 16:09:34.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-10-07 16:09:34.769+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-10-07T23:09:33+0700 - 0.00 B
+2015-10-07 16:09:34.769+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-10-07T23:09:33+0700 - 0.00 B
+2015-10-07 16:09:34.770+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-10-07T23:09:33+0700 - 0.00 B
+2015-10-07 16:09:34.770+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-10-07T23:09:33+0700 - 0.00 B
+2015-10-07 16:09:34.770+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-07 16:09:34.771+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-10-07 16:09:34.842+0000 DEBUG [o.n.k.EmbeddedGraphDatabase]: GC Monitor started. 
+2015-10-07 16:09:34.842+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2015-10-07 16:09:34.842+0000 INFO  [o.n.s.d.LifecycleManagingDatabase]: Successfully started database
+2015-10-07 16:09:34.861+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED START ---
+2015-10-07 16:09:34.969+0000 INFO  [o.n.s.CommunityNeoServer]: Starting HTTP on port :7474 with 4 threads available
+2015-10-07 16:09:35.323+0000 INFO  [o.n.s.CommunityNeoServer]: Enabling HTTPS on port :7473
+2015-10-07 16:09:35.323+0000 INFO  [o.n.s.CommunityNeoServer]: No SSL certificate found, generating a self-signed certificate..
+2015-10-07 16:09:35.783+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.discovery.DiscoveryService, org.neo4j.server.rest.dbms.UserService] at [/]
+2015-10-07 16:09:35.798+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.web.RestfulGraphDatabase, org.neo4j.server.rest.web.TransactionalService, org.neo4j.server.rest.web.CypherService, org.neo4j.server.rest.web.DatabaseMetadataService, org.neo4j.server.rest.web.ExtensionService, org.neo4j.server.rest.web.ResourcesService, org.neo4j.server.rest.web.BatchOperationService] at [/db/data]
+2015-10-07 16:09:35.805+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.management.JmxService, org.neo4j.server.rest.management.RootService, org.neo4j.server.rest.management.VersionAndEditionService] at [/db/manage]
+2015-10-07 16:09:35.806+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.management.MonitorService, org.neo4j.server.rest.management.console.ConsoleService] at [/db/manage]
+2015-10-07 16:09:35.932+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/webadmin] from [webadmin-html]
+2015-10-07 16:09:35.983+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Found [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar!/webadmin-html]
+2015-10-07 16:09:35.985+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting static content from [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar!/webadmin-html] at [/webadmin]
+2015-10-07 16:09:35.989+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting servlet at [/db/manage]
+2015-10-07 16:09:36.009+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting servlet at [/db/data]
+2015-10-07 16:09:36.009+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/browser] from [browser]
+2015-10-07 16:09:36.010+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Found [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar!/browser]
+2015-10-07 16:09:36.010+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting static content from [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar!/browser] at [/browser]
+2015-10-07 16:09:36.010+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting servlet at [/]
+2015-10-07 16:09:37.844+0000 INFO  [o.n.s.CommunityNeoServer]: Server started on: http://localhost:7474/
+2015-10-07 16:09:37.845+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7474/]
+2015-10-07 16:09:37.846+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
+2015-10-07 16:50:31.723+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: help commands
+2015-10-07 16:54:13.693+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (AndyW:Person {name:'Andy Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (AndyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+  
+CREATE (Emil:Person {name:"Emil Eifrem", born:1978})
+CREATE (Emil)-[:ACTED_IN {roles:["Emil"]}]->(TheMatrix)
+
+CREATE (TheMatrixReloaded:Movie {title:'The Matrix Reloaded', released:2003, tagline:'Free your mind'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixReloaded),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixReloaded),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixReloaded),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixReloaded),
+  (AndyW)-[:DIRECTED]->(TheMatrixReloaded),
+  (LanaW)-[:DIRECTED]->(TheMatrixReloaded),
+  (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+  
+CREATE (TheMatrixRevolutions:Movie {title:'The Matrix Revolutions', released:2003, tagline:'Everything that has a beginning has an end'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixRevolutions),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
+  (AndyW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions)
+  
+CREATE (TheDevilsAdvocate:Movie {title:"The Devil's Advocate", released:1997, tagline:'Evil has its winning ways'})
+CREATE (Charlize:Person {name:'Charlize Theron', born:1975})
+CREATE (Al:Person {name:'Al Pacino', born:1940})
+CREATE (Taylor:Person {name:'Taylor Hackford', born:1944})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Kevin Lomax']}]->(TheDevilsAdvocate),
+  (Charlize)-[:ACTED_IN {roles:['Mary Ann Lomax']}]->(TheDevilsAdvocate),
+  (Al)-[:ACTED_IN {roles:['John Milton']}]->(TheDevilsAdvocate),
+  (Taylor)-[:DIRECTED]->(TheDevilsAdvocate)
+  
+CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992, tagline:"In the heart of the nation's capital, in a courthouse of the U.S. government, one man will stop at nothing to keep his honor, and one will stop at nothing to find the truth."})
+CREATE (TomC:Person {name:'Tom Cruise', born:1962})
+CREATE (JackN:Person {name:'Jack Nicholson', born:1937})
+CREATE (DemiM:Person {name:'Demi Moore', born:1962})
+CREATE (KevinB:Person {name:'Kevin Bacon', born:1958})
+CREATE (KieferS:Person {name:'Kiefer Sutherland', born:1966})
+CREATE (NoahW:Person {name:'Noah Wyle', born:1971})
+CREATE (CubaG:Person {name:'Cuba Gooding Jr.', born:1968})
+CREATE (KevinP:Person {name:'Kevin Pollak', born:1957})
+CREATE (JTW:Person {name:'J.T. Walsh', born:1943})
+CREATE (JamesM:Person {name:'James Marshall', born:1967})
+CREATE (ChristopherG:Person {name:'Christopher Guest', born:1948})
+CREATE (RobR:Person {name:'Rob Reiner', born:1947})
+CREATE (AaronS:Person {name:'Aaron Sorkin', born:1961})
+CREATE
+  (TomC)-[:ACTED_IN {roles:['Lt. Daniel Kaffee']}]->(AFewGoodMen),
+  (JackN)-[:ACTED_IN {roles:['Col. Nathan R. Jessup']}]->(AFewGoodMen),
+  (DemiM)-[:ACTED_IN {roles:['Lt. Cdr. JoAnne Galloway']}]->(AFewGoodMen),
+  (KevinB)-[:ACTED_IN {roles:['Capt. Jack Ross']}]->(AFewGoodMen),
+  (KieferS)-[:ACTED_IN {roles:['Lt. Jonathan Kendrick']}]->(AFewGoodMen),
+  (NoahW)-[:ACTED_IN {roles:['Cpl. Jeffrey Barnes']}]->(AFewGoodMen),
+  (CubaG)-[:ACTED_IN {roles:['Cpl. Carl Hammaker']}]->(AFewGoodMen),
+  (KevinP)-[:ACTED_IN {roles:['Lt. Sam Weinberg']}]->(AFewGoodMen),
+  (JTW)-[:ACTED_IN {roles:['Lt. Col. Matthew Andrew Markinson']}]->(AFewGoodMen),
+  (JamesM)-[:ACTED_IN {roles:['Pfc. Louden Downey']}]->(AFewGoodMen),
+  (ChristopherG)-[:ACTED_IN {roles:['Dr. Stone']}]->(AFewGoodMen),
+  (AaronS)-[:ACTED_IN {roles:['Man in Bar']}]->(AFewGoodMen),
+  (RobR)-[:DIRECTED]->(AFewGoodMen),
+  (AaronS)-[:WROTE]->(AFewGoodMen)
+  
+CREATE (TopGun:Movie {title:"Top Gun", released:1986, tagline:'I feel the need, the need for speed.'})
+CREATE (KellyM:Person {name:'Kelly McGillis', born:1957})
+CREATE (ValK:Person {name:'Val Kilmer', born:1959})
+CREATE (AnthonyE:Person {name:'Anthony Edwards', born:1962})
+CREATE (TomS:Person {name:'Tom Skerritt', born:1933})
+CREATE (MegR:Person {name:'Meg Ryan', born:1961})
+CREATE (TonyS:Person {name:'Tony Scott', born:1944})
+CREATE (JimC:Person {name:'Jim Cash', born:1941})
+CREATE
+  (TomC)-[:ACTED_IN {roles:['Maverick']}]->(TopGun),
+  (KellyM)-[:ACTED_IN {roles:['Charlie']}]->(TopGun),
+  (ValK)-[:ACTED_IN {roles:['Iceman']}]->(TopGun),
+  (AnthonyE)-[:ACTED_IN {roles:['Goose']}]->(TopGun),
+  (TomS)-[:ACTED_IN {roles:['Viper']}]->(TopGun),
+  (MegR)-[:ACTED_IN {roles:['Carole']}]->(TopGun),
+  (TonyS)-[:DIRECTED]->(TopGun),
+  (JimC)-[:WROTE]->(TopGun)
+  
+CREATE (JerryMaguire:Movie {title:'Jerry Maguire', released:2000, tagline:'The rest of his life begins now.'})
+CREATE (ReneeZ:Person {name:'Renee Zellweger', born:1969})
+CREATE (KellyP:Person {name:'Kelly Preston', born:1962})
+CREATE (JerryO:Person {name:"Jerry O'Connell", born:1974})
+CREATE (JayM:Person {name:'Jay Mohr', born:1970})
+CREATE (BonnieH:Person {name:'Bonnie Hunt', born:1961})
+CREATE (ReginaK:Person {name:'Regina King', born:1971})
+CREATE (JonathanL:Person {name:'Jonathan Lipnicki', born:1996})
+CREATE (CameronC:Person {name:'Cameron Crowe', born:1957})
+CREATE
+  (TomC)-[:ACTED_IN {roles:['Jerry Maguire']}]->(JerryMaguire),
+  (CubaG)-[:ACTED_IN {roles:['Rod Tidwell']}]->(JerryMaguire),
+  (ReneeZ)-[:ACTED_IN {roles:['Dorothy Boyd']}]->(JerryMaguire),
+  (KellyP)-[:ACTED_IN {roles:['Avery Bishop']}]->(JerryMaguire),
+  (JerryO)-[:ACTED_IN {roles:['Frank Cushman']}]->(JerryMaguire),
+  (JayM)-[:ACTED_IN {roles:['Bob Sugar']}]->(JerryMaguire),
+  (BonnieH)-[:ACTED_IN {roles:['Laurel Boyd']}]->(JerryMaguire),
+  (ReginaK)-[:ACTED_IN {roles:['Marcee Tidwell']}]->(JerryMaguire),
+  (JonathanL)-[:ACTED_IN {roles:['Ray Boyd']}]->(JerryMaguire),
+  (CameronC)-[:DIRECTED]->(JerryMaguire),
+  (CameronC)-[:PRODUCED]->(JerryMaguire),
+  (CameronC)-[:WROTE]->(JerryMaguire)
+  
+CREATE (StandByMe:Movie {title:"Stand By Me", released:1986, tagline:"For some, it's the last real taste of innocence, and the first real taste of life. But for everyone, it's the time that memories are made of."})
+CREATE (RiverP:Person {name:'River Phoenix', born:1970})
+CREATE (CoreyF:Person {name:'Corey Feldman', born:1971})
+CREATE (WilW:Person {name:'Wil Wheaton', born:1972})
+CREATE (JohnC:Person {name:'John Cusack', born:1966})
+CREATE (MarshallB:Person {name:'Marshall Bell', born:1942})
+CREATE
+  (WilW)-[:ACTED_IN {roles:['Gordie Lachance']}]->(StandByMe),
+  (RiverP)-[:ACTED_IN {roles:['Chris Chambers']}]->(StandByMe),
+  (JerryO)-[:ACTED_IN {roles:['Vern Tessio']}]->(StandByMe),
+  (CoreyF)-[:ACTED_IN {roles:['Teddy Duchamp']}]->(StandByMe),
+  (JohnC)-[:ACTED_IN {roles:['Denny Lachance']}]->(StandByMe),
+  (KieferS)-[:ACTED_IN {roles:['Ace Merrill']}]->(StandByMe),
+  (MarshallB)-[:ACTED_IN {roles:['Mr. Lachance']}]->(StandByMe),
+  (RobR)-[:DIRECTED]->(StandByMe)
+  
+CREATE (AsGoodAsItGets:Movie {title:'As Good as It Gets', released:1997, tagline:'A comedy from the heart that goes for the throat.'})
+CREATE (HelenH:Person {name:'Helen Hunt', born:1963})
+CREATE (GregK:Person {name:'Greg Kinnear', born:1963})
+CREATE (JamesB:Person {name:'James L. Brooks', born:1940})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Melvin Udall']}]->(AsGoodAsItGets),
+  (HelenH)-[:ACTED_IN {roles:['Carol Connelly']}]->(AsGoodAsItGets),
+  (GregK)-[:ACTED_IN {roles:['Simon Bishop']}]->(AsGoodAsItGets),
+  (CubaG)-[:ACTED_IN {roles:['Frank Sachs']}]->(AsGoodAsItGets),
+  (JamesB)-[:DIRECTED]->(AsGoodAsItGets)
+  
+CREATE (WhatDreamsMayCome:Movie {title:'What Dreams May Come', released:1998, tagline:'After life there is more. The end is just the beginning.'})
+CREATE (AnnabellaS:Person {name:'Annabella Sciorra', born:1960})
+CREATE (MaxS:Person {name:'Max von Sydow', born:1929})
+CREATE (WernerH:Person {name:'Werner Herzog', born:1942})
+CREATE (Robin:Person {name:'Robin Williams', born:1951})
+CREATE (VincentW:Person {name:'Vincent Ward', born:1956})
+CREATE
+  (Robin)-[:ACTED_IN {roles:['Chris Nielsen']}]->(WhatDreamsMayCome),
+  (CubaG)-[:ACTED_IN {roles:['Albert Lewis']}]->(WhatDreamsMayCome),
+  (AnnabellaS)-[:ACTED_IN {roles:['Annie Collins-Nielsen']}]->(WhatDreamsMayCome),
+  (MaxS)-[:ACTED_IN {roles:['The Tracker']}]->(WhatDreamsMayCome),
+  (WernerH)-[:ACTED_IN {roles:['The Face']}]->(WhatDreamsMayCome),
+  (VincentW)-[:DIRECTED]->(WhatDreamsMayCome)
+  
+CREATE (SnowFallingonCedars:Movie {title:'Snow Falling on Cedars', released:1999, tagline:'First loves last. Forever.'})
+CREATE (EthanH:Person {name:'Ethan Hawke', born:1970})
+CREATE (RickY:Person {name:'Rick Yune', born:1971})
+CREATE (JamesC:Person {name:'James Cromwell', born:1940})
+CREATE (ScottH:Person {name:'Scott Hicks', born:1953})
+CREATE
+  (EthanH)-[:ACTED_IN {roles:['Ishmael Chambers']}]->(SnowFallingonCedars),
+  (RickY)-[:ACTED_IN {roles:['Kazuo Miyamoto']}]->(SnowFallingonCedars),
+  (MaxS)-[:ACTED_IN {roles:['Nels Gudmundsson']}]->(SnowFallingonCedars),
+  (JamesC)-[:ACTED_IN {roles:['Judge Fielding']}]->(SnowFallingonCedars),
+  (ScottH)-[:DIRECTED]->(SnowFallingonCedars)
+  
+CREATE (YouveGotMail:Movie {title:"You've Got Mail", released:1998, tagline:'At odds in life... in love on-line.'})
+CREATE (ParkerP:Person {name:'Parker Posey', born:1968})
+CREATE (DaveC:Person {name:'Dave Chappelle', born:1973})
+CREATE (SteveZ:Person {name:'Steve Zahn', born:1967})
+CREATE (TomH:Person {name:'Tom Hanks', born:1956})
+CREATE (NoraE:Person {name:'Nora Ephron', born:1941})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Joe Fox']}]->(YouveGotMail),
+  (MegR)-[:ACTED_IN {roles:['Kathleen Kelly']}]->(YouveGotMail),
+  (GregK)-[:ACTED_IN {roles:['Frank Navasky']}]->(YouveGotMail),
+  (ParkerP)-[:ACTED_IN {roles:['Patricia Eden']}]->(YouveGotMail),
+  (DaveC)-[:ACTED_IN {roles:['Kevin Jackson']}]->(YouveGotMail),
+  (SteveZ)-[:ACTED_IN {roles:['George Pappas']}]->(YouveGotMail),
+  (NoraE)-[:DIRECTED]->(YouveGotMail)
+  
+CREATE (SleeplessInSeattle:Movie {title:'Sleepless in Seattle', released:1993, tagline:'What if someone you never met, someone you never saw, someone you never knew was the only someone for you?'})
+CREATE (RitaW:Person {name:'Rita Wilson', born:1956})
+CREATE (BillPull:Person {name:'Bill Pullman', born:1953})
+CREATE (VictorG:Person {name:'Victor Garber', born:1949})
+CREATE (RosieO:Person {name:"Rosie O'Donnell", born:1962})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Sam Baldwin']}]->(SleeplessInSeattle),
+  (MegR)-[:ACTED_IN {roles:['Annie Reed']}]->(SleeplessInSeattle),
+  (RitaW)-[:ACTED_IN {roles:['Suzy']}]->(SleeplessInSeattle),
+  (BillPull)-[:ACTED_IN {roles:['Walter']}]->(SleeplessInSeattle),
+  (VictorG)-[:ACTED_IN {roles:['Greg']}]->(SleeplessInSeattle),
+  (RosieO)-[:ACTED_IN {roles:['Becky']}]->(SleeplessInSeattle),
+  (NoraE)-[:DIRECTED]->(SleeplessInSeattle)
+  
+CREATE (JoeVersustheVolcano:Movie {title:'Joe Versus the Volcano', released:1990, tagline:'A story of love, lava and burning desire.'})
+CREATE (JohnS:Person {name:'John Patrick Stanley', born:1950})
+CREATE (Nathan:Person {name:'Nathan Lane', born:1956})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Joe Banks']}]->(JoeVersustheVolcano),
+  (MegR)-[:ACTED_IN {roles:['DeDe', 'Angelica Graynamore', 'Patricia Graynamore']}]->(JoeVersustheVolcano),
+  (Nathan)-[:ACTED_IN {roles:['Baw']}]->(JoeVersustheVolcano),
+  (JohnS)-[:DIRECTED]->(JoeVersustheVolcano)
+  
+CREATE (WhenHarryMetSally:Movie {title:'When Harry Met Sally', released:1998, tagline:'At odds in life... in love on-line.'})
+CREATE (BillyC:Person {name:'Billy Crystal', born:1948})
+CREATE (CarrieF:Person {name:'Carrie Fisher', born:1956})
+CREATE (BrunoK:Person {name:'Bruno Kirby', born:1949})
+CREATE
+  (BillyC)-[:ACTED_IN {roles:['Harry Burns']}]->(WhenHarryMetSally),
+  (MegR)-[:ACTED_IN {roles:['Sally Albright']}]->(WhenHarryMetSally),
+  (CarrieF)-[:ACTED_IN {roles:['Marie']}]->(WhenHarryMetSally),
+  (BrunoK)-[:ACTED_IN {roles:['Jess']}]->(WhenHarryMetSally),
+  (RobR)-[:DIRECTED]->(WhenHarryMetSally),
+  (RobR)-[:PRODUCED]->(WhenHarryMetSally),
+  (NoraE)-[:PRODUCED]->(WhenHarryMetSally),
+  (NoraE)-[:WROTE]->(WhenHarryMetSally)
+  
+CREATE (ThatThingYouDo:Movie {title:'That Thing You Do', released:1996, tagline:'In every life there comes a time when that thing you dream becomes that thing you do'})
+CREATE (LivT:Person {name:'Liv Tyler', born:1977})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Mr. White']}]->(ThatThingYouDo),
+  (LivT)-[:ACTED_IN {roles:['Faye Dolan']}]->(ThatThingYouDo),
+  (Charlize)-[:ACTED_IN {roles:['Tina']}]->(ThatThingYouDo),
+  (TomH)-[:DIRECTED]->(ThatThingYouDo)
+  
+CREATE (TheReplacements:Movie {title:'The Replacements', released:2000, tagline:'Pain heals, Chicks dig scars... Glory lasts forever'})
+CREATE (Brooke:Person {name:'Brooke Langton', born:1970})
+CREATE (Gene:Person {name:'Gene Hackman', born:1930})
+CREATE (Orlando:Person {name:'Orlando Jones', born:1968})
+CREATE (Howard:Person {name:'Howard Deutch', born:1950})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Shane Falco']}]->(TheReplacements),
+  (Brooke)-[:ACTED_IN {roles:['Annabelle Farrell']}]->(TheReplacements),
+  (Gene)-[:ACTED_IN {roles:['Jimmy McGinty']}]->(TheReplacements),
+  (Orlando)-[:ACTED_IN {roles:['Clifford Franklin']}]->(TheReplacements),
+  (Howard)-[:DIRECTED]->(TheReplacements)
+  
+CREATE (RescueDawn:Movie {title:'RescueDawn', released:2006, tagline:"Based on the extraordinary true story of one man's fight for freedom"})
+CREATE (ChristianB:Person {name:'Christian Bale', born:1974})
+CREATE (ZachG:Person {name:'Zach Grenier', born:1954})
+CREATE
+  (MarshallB)-[:ACTED_IN {roles:['Admiral']}]->(RescueDawn),
+  (ChristianB)-[:ACTED_IN {roles:['Dieter Dengler']}]->(RescueDawn),
+  (ZachG)-[:ACTED_IN {roles:['Squad Leader']}]->(RescueDawn),
+  (SteveZ)-[:ACTED_IN {roles:['Duane']}]->(RescueDawn),
+  (WernerH)-[:DIRECTED]->(RescueDawn)
+  
+CREATE (TheBirdcage:Movie {title:'The Birdcage', released:1996, tagline:'Come as you are'})
+CREATE (MikeN:Person {name:'Mike Nichols', born:1931})
+CREATE
+  (Robin)-[:ACTED_IN {roles:['Armand Goldman']}]->(TheBirdcage),
+  (Nathan)-[:ACTED_IN {roles:['Albert Goldman']}]->(TheBirdcage),
+  (Gene)-[:ACTED_IN {roles:['Sen. Kevin Keeley']}]->(TheBirdcage),
+  (MikeN)-[:DIRECTED]->(TheBirdcage)
+  
+CREATE (Unforgiven:Movie {title:'Unforgiven', released:1992, tagline:"It's a hell of a thing, killing a man"})
+CREATE (RichardH:Person {name:'Richard Harris', born:1930})
+CREATE (ClintE:Person {name:'Clint Eastwood', born:1930})
+CREATE
+  (RichardH)-[:ACTED_IN {roles:['English Bob']}]->(Unforgiven),
+  (ClintE)-[:ACTED_IN {roles:['Bill Munny']}]->(Unforgiven),
+  (Gene)-[:ACTED_IN {roles:['Little Bill Daggett']}]->(Unforgiven),
+  (ClintE)-[:DIRECTED]->(Unforgiven)
+  
+CREATE (JohnnyMnemonic:Movie {title:'Johnny Mnemonic', released:1995, tagline:'The hottest data on earth. In the coolest head in town'})
+CREATE (Takeshi:Person {name:'Takeshi Kitano', born:1947})
+CREATE (Dina:Person {name:'Dina Meyer', born:1968})
+CREATE (IceT:Person {name:'Ice-T', born:1958})
+CREATE (RobertL:Person {name:'Robert Longo', born:1953})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Johnny Mnemonic']}]->(JohnnyMnemonic),
+  (Takeshi)-[:ACTED_IN {roles:['Takahashi']}]->(JohnnyMnemonic),
+  (Dina)-[:ACTED_IN {roles:['Jane']}]->(JohnnyMnemonic),
+  (IceT)-[:ACTED_IN {roles:['J-Bone']}]->(JohnnyMnemonic),
+  (RobertL)-[:DIRECTED]->(JohnnyMnemonic)
+  
+CREATE (CloudAtlas:Movie {title:'Cloud Atlas', released:2012, tagline:'Everything is connected'})
+CREATE (HalleB:Person {name:'Halle Berry', born:1966})
+CREATE (JimB:Person {name:'Jim Broadbent', born:1949})
+CREATE (TomT:Person {name:'Tom Tykwer', born:1965})
+CREATE (DavidMitchell:Person {name:'David Mitchell', born:1969})
+CREATE (StefanArndt:Person {name:'Stefan Arndt', born:1961})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Zachry', 'Dr. Henry Goose', 'Isaac Sachs', 'Dermot Hoggins']}]->(CloudAtlas),
+  (Hugo)-[:ACTED_IN {roles:['Bill Smoke', 'Haskell Moore', 'Tadeusz Kesselring', 'Nurse Noakes', 'Boardman Mephi', 'Old Georgie']}]->(CloudAtlas),
+  (HalleB)-[:ACTED_IN {roles:['Luisa Rey', 'Jocasta Ayrs', 'Ovid', 'Meronym']}]->(CloudAtlas),
+  (JimB)-[:ACTED_IN {roles:['Vyvyan Ayrs', 'Captain Molyneux', 'Timothy Cavendish']}]->(CloudAtlas),
+  (TomT)-[:DIRECTED]->(CloudAtlas),
+  (AndyW)-[:DIRECTED]->(CloudAtlas),
+  (LanaW)-[:DIRECTED]->(CloudAtlas),
+  (DavidMitchell)-[:WROTE]->(CloudAtlas),
+  (StefanArndt)-[:PRODUCED]->(CloudAtlas)
+  
+CREATE (TheDaVinciCode:Movie {title:'The Da Vinci Code', released:2006, tagline:'Break The Codes'})
+CREATE (IanM:Person {name:'Ian McKellen', born:1939})
+CREATE (AudreyT:Person {name:'Audrey Tautou', born:1976})
+CREATE (PaulB:Person {name:'Paul Bettany', born:1971})
+CREATE (RonH:Person {name:'Ron Howard', born:1954})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Dr. Robert Langdon']}]->(TheDaVinciCode),
+  (IanM)-[:ACTED_IN {roles:['Sir Leight Teabing']}]->(TheDaVinciCode),
+  (AudreyT)-[:ACTED_IN {roles:['Sophie Neveu']}]->(TheDaVinciCode),
+  (PaulB)-[:ACTED_IN {roles:['Silas']}]->(TheDaVinciCode),
+  (RonH)-[:DIRECTED]->(TheDaVinciCode)
+  
+CREATE (VforVendetta:Movie {title:'V for Vendetta', released:2006, tagline:'Freedom! Forever!'})
+CREATE (NatalieP:Person {name:'Natalie Portman', born:1981})
+CREATE (StephenR:Person {name:'Stephen Rea', born:1946})
+CREATE (JohnH:Person {name:'John Hurt', born:1940})
+CREATE (BenM:Person {name: 'Ben Miles', born:1967})
+CREATE
+  (Hugo)-[:ACTED_IN {roles:['V']}]->(VforVendetta),
+  (NatalieP)-[:ACTED_IN {roles:['Evey Hammond']}]->(VforVendetta),
+  (StephenR)-[:ACTED_IN {roles:['Eric Finch']}]->(VforVendetta),
+  (JohnH)-[:ACTED_IN {roles:['High Chancellor Adam Sutler']}]->(VforVendetta),
+  (BenM)-[:ACTED_IN {roles:['Dascomb']}]->(VforVendetta),
+  (JamesM)-[:DIRECTED]->(VforVendetta),
+  (AndyW)-[:PRODUCED]->(VforVendetta),
+  (LanaW)-[:PRODUCED]->(VforVendetta),
+  (JoelS)-[:PRODUCED]->(VforVendetta),
+  (AndyW)-[:WROTE]->(VforVendetta),
+  (LanaW)-[:WROTE]->(VforVendetta)
+  
+CREATE (SpeedRacer:Movie {title:'Speed Racer', released:2008, tagline:'Speed has no limits'})
+CREATE (EmileH:Person {name:'Emile Hirsch', born:1985})
+CREATE (JohnG:Person {name:'John Goodman', born:1960})
+CREATE (SusanS:Person {name:'Susan Sarandon', born:1946})
+CREATE (MatthewF:Person {name:'Matthew Fox', born:1966})
+CREATE (ChristinaR:Person {name:'Christina Ricci', born:1980})
+CREATE (Rain:Person {name:'Rain', born:1982})
+CREATE
+  (EmileH)-[:ACTED_IN {roles:['Speed Racer']}]->(SpeedRacer),
+  (JohnG)-[:ACTED_IN {roles:['Pops']}]->(SpeedRacer),
+  (SusanS)-[:ACTED_IN {roles:['Mom']}]->(SpeedRacer),
+  (MatthewF)-[:ACTED_IN {roles:['Racer X']}]->(SpeedRacer),
+  (ChristinaR)-[:ACTED_IN {roles:['Trixie']}]->(SpeedRacer),
+  (Rain)-[:ACTED_IN {roles:['Taejo Togokahn']}]->(SpeedRacer),
+  (BenM)-[:ACTED_IN {roles:['Cass Jones']}]->(SpeedRacer),
+  (AndyW)-[:DIRECTED]->(SpeedRacer),
+  (LanaW)-[:DIRECTED]->(SpeedRacer),
+  (AndyW)-[:WROTE]->(SpeedRacer),
+  (LanaW)-[:WROTE]->(SpeedRacer),
+  (JoelS)-[:PRODUCED]->(SpeedRacer)
+  
+CREATE (NinjaAssassin:Movie {title:'Ninja Assassin', released:2009, tagline:'Prepare to enter a secret world of assassins'})
+CREATE (NaomieH:Person {name:'Naomie Harris'})
+CREATE
+  (Rain)-[:ACTED_IN {roles:['Raizo']}]->(NinjaAssassin),
+  (NaomieH)-[:ACTED_IN {roles:['Mika Coretti']}]->(NinjaAssassin),
+  (RickY)-[:ACTED_IN {roles:['Takeshi']}]->(NinjaAssassin),
+  (BenM)-[:ACTED_IN {roles:['Ryan Maslow']}]->(NinjaAssassin),
+  (JamesM)-[:DIRECTED]->(NinjaAssassin),
+  (AndyW)-[:PRODUCED]->(NinjaAssassin),
+  (LanaW)-[:PRODUCED]->(NinjaAssassin),
+  (JoelS)-[:PRODUCED]->(NinjaAssassin)
+  
+CREATE (TheGreenMile:Movie {title:'The Green Mile', released:1999, tagline:"Walk a mile you'll never forget."})
+CREATE (MichaelD:Person {name:'Michael Clarke Duncan', born:1957})
+CREATE (DavidM:Person {name:'David Morse', born:1953})
+CREATE (SamR:Person {name:'Sam Rockwell', born:1968})
+CREATE (GaryS:Person {name:'Gary Sinise', born:1955})
+CREATE (PatriciaC:Person {name:'Patricia Clarkson', born:1959})
+CREATE (FrankD:Person {name:'Frank Darabont', born:1959})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Paul Edgecomb']}]->(TheGreenMile),
+  (MichaelD)-[:ACTED_IN {roles:['John Coffey']}]->(TheGreenMile),
+  (DavidM)-[:ACTED_IN {roles:['Brutus "Brutal" Howell']}]->(TheGreenMile),
+  (BonnieH)-[:ACTED_IN {roles:['Jan Edgecomb']}]->(TheGreenMile),
+  (JamesC)-[:ACTED_IN {roles:['Warden Hal Moores']}]->(TheGreenMile),
+  (SamR)-[:ACTED_IN {roles:['"Wild Bill" Wharton']}]->(TheGreenMile),
+  (GaryS)-[:ACTED_IN {roles:['Burt Hammersmith']}]->(TheGreenMile),
+  (PatriciaC)-[:ACTED_IN {roles:['Melinda Moores']}]->(TheGreenMile),
+  (FrankD)-[:DIRECTED]->(TheGreenMile)
+  
+CREATE (FrostNixon:Movie {title:'Frost/Nixon', released:2008, tagline:'400 million people were waiting for the truth.'})
+CREATE (FrankL:Person {name:'Frank Langella', born:1938})
+CREATE (MichaelS:Person {name:'Michael Sheen', born:1969})
+CREATE (OliverP:Person {name:'Oliver Platt', born:1960})
+CREATE
+  (FrankL)-[:ACTED_IN {roles:['Richard Nixon']}]->(FrostNixon),
+  (MichaelS)-[:ACTED_IN {roles:['David Frost']}]->(FrostNixon),
+  (KevinB)-[:ACTED_IN {roles:['Jack Brennan']}]->(FrostNixon),
+  (OliverP)-[:ACTED_IN {roles:['Bob Zelnick']}]->(FrostNixon),
+  (SamR)-[:ACTED_IN {roles:['James Reston, Jr.']}]->(FrostNixon),
+  (RonH)-[:DIRECTED]->(FrostNixon)
+  
+CREATE (Hoffa:Movie {title:'Hoffa', released:1992, tagline:"He didn't want law. He wanted justice."})
+CREATE (DannyD:Person {name:'Danny DeVito', born:1944})
+CREATE (JohnR:Person {name:'John C. Reilly', born:1965})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Hoffa']}]->(Hoffa),
+  (DannyD)-[:ACTED_IN {roles:['Robert "Bobby" Ciaro']}]->(Hoffa),
+  (JTW)-[:ACTED_IN {roles:['Frank Fitzsimmons']}]->(Hoffa),
+  (JohnR)-[:ACTED_IN {roles:['Peter "Pete" Connelly']}]->(Hoffa),
+  (DannyD)-[:DIRECTED]->(Hoffa)
+  
+CREATE (Apollo13:Movie {title:'Apollo 13', released:1995, tagline:'Houston, we have a problem.'})
+CREATE (EdH:Person {name:'Ed Harris', born:1950})
+CREATE (BillPax:Person {name:'Bill Paxton', born:1955})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Jim Lovell']}]->(Apollo13),
+  (KevinB)-[:ACTED_IN {roles:['Jack Swigert']}]->(Apollo13),
+  (EdH)-[:ACTED_IN {roles:['Gene Kranz']}]->(Apollo13),
+  (BillPax)-[:ACTED_IN {roles:['Fred Haise']}]->(Apollo13),
+  (GaryS)-[:ACTED_IN {roles:['Ken Mattingly']}]->(Apollo13),
+  (RonH)-[:DIRECTED]->(Apollo13)
+  
+CREATE (Twister:Movie {title:'Twister', released:1996, tagline:"Don't Breathe. Don't Look Back."})
+CREATE (PhilipH:Person {name:'Philip Seymour Hoffman', born:1967})
+CREATE (JanB:Person {name:'Jan de Bont', born:1943})
+CREATE
+  (BillPax)-[:ACTED_IN {roles:['Bill Harding']}]->(Twister),
+  (HelenH)-[:ACTED_IN {roles:['Dr. Jo Harding']}]->(Twister),
+  (ZachG)-[:ACTED_IN {roles:['Eddie']}]->(Twister),
+  (PhilipH)-[:ACTED_IN {roles:['Dustin "Dusty" Davis']}]->(Twister),
+  (JanB)-[:DIRECTED]->(Twister)
+  
+CREATE (CastAway:Movie {title:'Cast Away', released:2000, tagline:'At the edge of the world, his journey begins.'})
+CREATE (RobertZ:Person {name:'Robert Zemeckis', born:1951})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Chuck Noland']}]->(CastAway),
+  (HelenH)-[:ACTED_IN {roles:['Kelly Frears']}]->(CastAway),
+  (RobertZ)-[:DIRECTED]->(CastAway)
+  
+CREATE (OneFlewOvertheCuckoosNest:Movie {title:"One Flew Over the Cuckoo's Nest", released:1975, tagline:"If he's crazy, what does that make you?"})
+CREATE (MilosF:Person {name:'Milos Forman', born:1932})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Randle McMurphy']}]->(OneFlewOvertheCuckoosNest),
+  (DannyD)-[:ACTED_IN {roles:['Martini']}]->(OneFlewOvertheCuckoosNest),
+  (MilosF)-[:DIRECTED]->(OneFlewOvertheCuckoosNest)
+  
+CREATE (SomethingsGottaGive:Movie {title:"Something's Gotta Give", released:2003})
+CREATE (DianeK:Person {name:'Diane Keaton', born:1946})
+CREATE (NancyM:Person {name:'Nancy Meyers', born:1949})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Harry Sanborn']}]->(SomethingsGottaGive),
+  (DianeK)-[:ACTED_IN {roles:['Erica Barry']}]->(SomethingsGottaGive),
+  (Keanu)-[:ACTED_IN {roles:['Julian Mercer']}]->(SomethingsGottaGive),
+  (NancyM)-[:DIRECTED]->(SomethingsGottaGive),
+  (NancyM)-[:PRODUCED]->(SomethingsGottaGive),
+  (NancyM)-[:WROTE]->(SomethingsGottaGive)
+  
+CREATE (BicentennialMan:Movie {title:'Bicentennial Man', released:1999, tagline:"One robot's 200 year journey to become an ordinary man."})
+CREATE (ChrisC:Person {name:'Chris Columbus', born:1958})
+CREATE
+  (Robin)-[:ACTED_IN {roles:['Andrew Marin']}]->(BicentennialMan),
+  (OliverP)-[:ACTED_IN {roles:['Rupert Burns']}]->(BicentennialMan),
+  (ChrisC)-[:DIRECTED]->(BicentennialMan)
+  
+CREATE (CharlieWilsonsWar:Movie {title:"Charlie Wilson's War", released:2007, tagline:"A stiff drink. A little mascara. A lot of nerve. Who said they couldn't bring down the Soviet empire."})
+CREATE (JuliaR:Person {name:'Julia Roberts', born:1967})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Rep. Charlie Wilson']}]->(CharlieWilsonsWar),
+  (JuliaR)-[:ACTED_IN {roles:['Joanne Herring']}]->(CharlieWilsonsWar),
+  (PhilipH)-[:ACTED_IN {roles:['Gust Avrakotos']}]->(CharlieWilsonsWar),
+  (MikeN)-[:DIRECTED]->(CharlieWilsonsWar)
+  
+CREATE (ThePolarExpress:Movie {title:'The Polar Express', released:2004, tagline:'This Holiday Season… Believe'})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Hero Boy', 'Father', 'Conductor', 'Hobo', 'Scrooge', 'Santa Claus']}]->(ThePolarExpress),
+  (RobertZ)-[:DIRECTED]->(ThePolarExpress)
+  
+CREATE (ALeagueofTheirOwn:Movie {title:'A League of Their Own', released:1992, tagline:'Once in a lifetime you get a chance to do something different.'})
+CREATE (Madonna:Person {name:'Madonna', born:1954})
+CREATE (GeenaD:Person {name:'Geena Davis', born:1956})
+CREATE (LoriP:Person {name:'Lori Petty', born:1963})
+CREATE (PennyM:Person {name:'Penny Marshall', born:1943})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Jimmy Dugan']}]->(ALeagueofTheirOwn),
+  (GeenaD)-[:ACTED_IN {roles:['Dottie Hinson']}]->(ALeagueofTheirOwn),
+  (LoriP)-[:ACTED_IN {roles:['Kit Keller']}]->(ALeagueofTheirOwn),
+  (RosieO)-[:ACTED_IN {roles:['Doris Murphy']}]->(ALeagueofTheirOwn),
+  (Madonna)-[:ACTED_IN {roles:['"All the Way" Mae Mordabito']}]->(ALeagueofTheirOwn),
+  (BillPax)-[:ACTED_IN {roles:['Bob Hinson']}]->(ALeagueofTheirOwn),
+  (PennyM)-[:DIRECTED]->(ALeagueofTheirOwn)
+  
+CREATE (PaulBlythe:Person {name:'Paul Blythe'})
+CREATE (AngelaScope:Person {name:'Angela Scope'})
+CREATE (JessicaThompson:Person {name:'Jessica Thompson'})
+CREATE (JamesThompson:Person {name:'James Thompson'})
+
+CREATE
+  (JamesThompson)-[:FOLLOWS]->(JessicaThompson),
+  (AngelaScope)-[:FOLLOWS]->(JessicaThompson),
+  (PaulBlythe)-[:FOLLOWS]->(AngelaScope)
+  
+CREATE
+  (JessicaThompson)-[:REVIEWED {summary:'An amazing journey', rating:95}]->(CloudAtlas),
+  (JessicaThompson)-[:REVIEWED {summary:'Silly, but fun', rating:65}]->(TheReplacements),
+  (JamesThompson)-[:REVIEWED {summary:'The coolest football movie ever', rating:100}]->(TheReplacements),
+  (AngelaScope)-[:REVIEWED {summary:'Pretty funny at times', rating:62}]->(TheReplacements),
+  (JessicaThompson)-[:REVIEWED {summary:'Dark, but compelling', rating:85}]->(Unforgiven),
+  (JessicaThompson)-[:REVIEWED {summary:"Slapstick redeemed only by the Robin Williams and Gene Hackman's stellar performances", rating:45}]->(TheBirdcage),
+  (JessicaThompson)-[:REVIEWED {summary:'A solid romp', rating:68}]->(TheDaVinciCode),
+  (JamesThompson)-[:REVIEWED {summary:'Fun, but a little far fetched', rating:65}]->(TheDaVinciCode),
+  (JessicaThompson)-[:REVIEWED {summary:'You had me at Jerry', rating:92}]->(JerryMaguire)
+  
+WITH TomH as a
+MATCH (a)-[:ACTED_IN]->(m)<-[:DIRECTED]-(d) RETURN a,m,d LIMIT 10
+;
+2015-10-07 16:54:19.553+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: MATCH a -[r]- b WHERE id(a) IN[71,108,105,6,5,67,72,78,79,162,166,161,151,115,144,85,150]
+AND id(b) IN[71,108,105,6,5,67,72,78,79,162,166,161,151,115,144,85,150]
+RETURN r;
+2015-10-07 18:22:18.776+0000 INFO  [o.n.s.CommunityBootstrapper]: Neo4j Server shutdown initiated by request
+2015-10-07 18:22:18.840+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown Neo4j Server.
+2015-10-07 18:22:18.840+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2015-10-07 18:22:18.842+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now unavailable
+2015-10-07 18:22:18.843+0000 DEBUG [o.n.k.EmbeddedGraphDatabase]: GC Monitor stopped. 
+2015-10-07 18:22:18.874+0000 INFO  [o.n.k.i.s.StoreFactory]: About to rotate counts store at transaction 18 to [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.b], from [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.a].
+2015-10-07 18:22:18.876+0000 INFO  [o.n.k.i.s.StoreFactory]: Successfully rotated counts store at transaction 18 to [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.b], from [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.a].
+2015-10-07 18:22:18.885+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db.names, truncating at 292 vs file size 8170
+2015-10-07 18:22:18.886+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db, truncating at 58 vs file size 8190
+2015-10-07 18:22:18.887+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db.names, truncating at 140 vs file size 8170
+2015-10-07 18:22:18.889+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db, truncating at 32 vs file size 8190
+2015-10-07 18:22:18.891+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.strings, truncating at 3226 vs file size 8192
+2015-10-07 18:22:18.892+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.index.keys, truncating at 368 vs file size 8170
+2015-10-07 18:22:18.893+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.index, truncating at 97 vs file size 8190
+2015-10-07 18:22:18.897+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.arrays, truncating at 22169 vs file size 24576
+2015-10-07 18:22:18.923+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db, truncating at 15723 vs file size 16318
+2015-10-07 18:22:18.925+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshipstore.db, truncating at 8626 vs file size 16320
+2015-10-07 18:22:18.927+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.nodestore.db.labels, truncating at 93 vs file size 93
+2015-10-07 18:22:18.929+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.nodestore.db, truncating at 2581 vs file size 8190
+2015-10-07 18:22:18.930+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.schemastore.db, truncating at 82 vs file size 82
+2015-10-07 18:22:18.931+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshipgroupstore.db, truncating at 54 vs file size 54
+2015-10-07 18:22:18.933+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore, truncating at 114 vs file size 8190
+2015-10-07 18:22:18.933+0000 INFO  [o.n.k.NeoStoreDataSource]: NeoStore closed
+2015-10-07 18:22:18.934+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2015-10-07 18:22:18.934+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
+2015-10-07 18:22:18.942+0000 INFO  [o.n.s.d.LifecycleManagingDatabase]: Successfully stopped database
+2015-10-07 18:22:18.943+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown database.
+2015-10-11 07:31:07.500+0000 INFO  [o.n.s.CommunityNeoServer]: Setting startup timeout to: 120000ms based on 120000
+2015-10-11 07:31:07.864+0000 INFO  [o.n.k.InternalAbstractGraphDatabase]: No locking implementation specified, defaulting to 'community'
+2015-10-11 07:31:08.165+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics START ---
+2015-10-11 07:31:08.177+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j Kernel properties:
+2015-10-11 07:31:08.191+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.keystore.location=data/keystore
+2015-10-11 07:31:08.191+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.db.tuning.properties=conf/neo4j.properties
+2015-10-11 07:31:08.191+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.database.location=data/graph.db
+2015-10-11 07:31:08.191+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.port=7474
+2015-10-11 07:31:08.191+0000 INFO  [o.n.k.i.DiagnosticsManager]: store_dir=/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.key.location=conf/ssl/snakeoil.key
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.config=conf/neo4j-http-logging.xml
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: dbms.querylog.filename=data/log/queries.log
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.cert.location=conf/ssl/snakeoil.cert
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.enabled=true
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.http.log.enabled=false
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webserver.https.port=7473
+2015-10-11 07:31:08.192+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.webadmin.rrdb.location=data/rrd
+2015-10-11 07:31:08.193+0000 INFO  [o.n.k.i.DiagnosticsManager]: remote_shell_enabled=true
+2015-10-11 07:31:08.193+0000 INFO  [o.n.k.i.DiagnosticsManager]: dbms.security.auth_enabled=true
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: Diagnostics providers:
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.configuration.Config
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.kernel.info.DiagnosticsManager
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_MEMORY
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_MEMORY
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: OPERATING_SYSTEM
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: JAVA_VIRTUAL_MACHINE
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: CLASSPATH
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: LIBRARY_PATH
+2015-10-11 07:31:08.197+0000 INFO  [o.n.k.i.DiagnosticsManager]: SYSTEM_PROPERTIES
+2015-10-11 07:31:08.198+0000 INFO  [o.n.k.i.DiagnosticsManager]: NETWORK
+2015-10-11 07:31:08.198+0000 INFO  [o.n.k.i.DiagnosticsManager]: System memory information:
+2015-10-11 07:31:08.210+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total Physical memory: 4.00 GB
+2015-10-11 07:31:08.210+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free Physical memory: 21.35 MB
+2015-10-11 07:31:08.211+0000 INFO  [o.n.k.i.DiagnosticsManager]: Committed virtual memory: 3.61 GB
+2015-10-11 07:31:08.212+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total swap space: 1.00 GB
+2015-10-11 07:31:08.214+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free swap space: 746.25 MB
+2015-10-11 07:31:08.215+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM memory information:
+2015-10-11 07:31:08.216+0000 INFO  [o.n.k.i.DiagnosticsManager]: Free  memory: 33.45 MB
+2015-10-11 07:31:08.216+0000 INFO  [o.n.k.i.DiagnosticsManager]: Total memory: 61.88 MB
+2015-10-11 07:31:08.216+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max   memory: 990.75 MB
+2015-10-11 07:31:08.225+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ParNew: [Par Eden Space, Par Survivor Space]
+2015-10-11 07:31:08.226+0000 INFO  [o.n.k.i.DiagnosticsManager]: Garbage Collector: ConcurrentMarkSweep: [Par Eden Space, Par Survivor Space, CMS Old Gen, CMS Perm Gen]
+2015-10-11 07:31:08.230+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Code Cache (Non-heap memory): committed=2.44 MB, used=734.44 kB, max=48.00 MB, threshold=0.00 B
+2015-10-11 07:31:08.232+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Eden Space (Heap memory): committed=17.06 MB, used=2.21 MB, max=266.25 MB, threshold=?
+2015-10-11 07:31:08.233+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: Par Survivor Space (Heap memory): committed=2.13 MB, used=2.13 MB, max=33.25 MB, threshold=?
+2015-10-11 07:31:08.235+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Old Gen (Heap memory): committed=42.69 MB, used=24.09 MB, max=691.25 MB, threshold=0.00 B
+2015-10-11 07:31:08.236+0000 INFO  [o.n.k.i.DiagnosticsManager]: Memory Pool: CMS Perm Gen (Non-heap memory): committed=20.75 MB, used=12.65 MB, max=82.00 MB, threshold=0.00 B
+2015-10-11 07:31:08.237+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating system information:
+2015-10-11 07:31:08.240+0000 INFO  [o.n.k.i.DiagnosticsManager]: Operating System: Mac OS X; version: 10.10.5; arch: x86_64; cpus: 4
+2015-10-11 07:31:08.241+0000 INFO  [o.n.k.i.DiagnosticsManager]: Max number of file descriptors: 10240
+2015-10-11 07:31:08.242+0000 INFO  [o.n.k.i.DiagnosticsManager]: Number of open file descriptors: 87
+2015-10-11 07:31:08.243+0000 INFO  [o.n.k.i.DiagnosticsManager]: Process id: 946@LucTuyetKy.local
+2015-10-11 07:31:08.244+0000 INFO  [o.n.k.i.DiagnosticsManager]: Byte order: LITTLE_ENDIAN
+2015-10-11 07:31:08.244+0000 INFO  [o.n.k.i.DiagnosticsManager]: Local timezone: Asia/Ho_Chi_Minh
+2015-10-11 07:31:08.244+0000 INFO  [o.n.k.i.DiagnosticsManager]: JVM information:
+2015-10-11 07:31:08.244+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Name: Java HotSpot(TM) 64-Bit Server VM
+2015-10-11 07:31:08.245+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Vendor: Oracle Corporation
+2015-10-11 07:31:08.245+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Version: 24.79-b02
+2015-10-11 07:31:08.247+0000 INFO  [o.n.k.i.DiagnosticsManager]: JIT compiler: HotSpot 64-Bit Tiered Compilers
+2015-10-11 07:31:08.249+0000 INFO  [o.n.k.i.DiagnosticsManager]: VM Arguments: [-XX:+DisableExplicitGC, -Dorg.neo4j.server.properties=conf/neo4j-server.properties, -Djava.util.logging.config.file=conf/logging.properties, -XX:+UseConcMarkSweepGC, -XX:+CMSClassUnloadingEnabled, -XX:-OmitStackTraceInFastThrow, -XX:hashCode=5, -Dneo4j.ext.udc.source=tarball, -Dneo4j.home=/Applications/xampp/xamppfiles/htdocs/code/neo4j, -Dneo4j.instance=/Applications/xampp/xamppfiles/htdocs/code/neo4j, -Dfile.encoding=UTF-8]
+2015-10-11 07:31:08.249+0000 INFO  [o.n.k.i.DiagnosticsManager]: Java classpath:
+2015-10-11 07:31:08.262+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-1.9-2.0.4.jar
+2015-10-11 07:31:08.263+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/dns_sd.jar
+2015-10-11 07:31:08.263+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/scala-library-2.10.5.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-jmx-2.2.5.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-beanutils-1.8.3.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/logback-access-1.1.2.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-io-9.2.4.v20141103.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jackson-jaxrs-1.9.13.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-import-tool-2.2.5.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/vecmath.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libmlib_jai.jnilib
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-multipart-1.19.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/lucene-core-3.6.2.jar
+2015-10-11 07:31:08.264+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/janino-2.6.1.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/bcprov-jdk16-140.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jce.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-consistency-check-2.2.5.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-unsafe-2.2.5.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-lang-2.6.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-2.0-2.0.4.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-util-9.2.4.v20141103.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/server-api-2.2.5.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3D.jnilib
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-servlet-9.2.4.v20141103.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/mlibwrapper_jai.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/logback-classic-1.1.2.jar
+2015-10-11 07:31:08.265+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-2.2.5.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/rrd4j-2.2.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-security-9.2.4.v20141103.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/classes
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DAudio.jnilib
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libAppleScriptEngine.jnilib
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-kernel-2.2.5.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3daudio.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-xml-9.2.4.v20141103.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/libJ3DUtils.jnilib
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-digester-2.1.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-server-9.2.4.v20141103.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-graph-algo-2.2.5.jar
+2015-10-11 07:31:08.266+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dcore.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/javax.servlet-api-3.1.0.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/usr/lib/java/libjdns_sd.jnilib
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jcl-over-slf4j-1.7.7.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-primitive-collections-2.2.5.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/mimepull-1.9.3.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/parboiled-scala_2.10-1.1.7.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/concurrentlinkedhashmap-lru-1.4.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jsse.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/resources.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/j3dutils.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/opencsv-2.3.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-servlet-1.19.jar
+2015-10-11 07:31:08.267+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/conf/
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_core.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-configuration-1.10.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/jai_codec.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/rhino-1.7R4.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-lucene-index-2.2.5.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jackson-core-asl-1.9.13.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-compiler-2.6.1.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-csv-2.2.5.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/charsets.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-webapp-9.2.4.v20141103.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/scala-reflect-2.10.5.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/org.apache.servicemix.bundles.jline-0.9.94_1.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-graph-matching-2.2.5.jar
+2015-10-11 07:31:08.268+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-2.1-2.1.8.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jsr311-api-1.1.2.r612.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-core-1.19.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jetty-http-9.2.4.v20141103.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/parboiled-core-1.1.7.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/logback-core-1.1.2.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jersey-server-1.19.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/jfr.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-io-2.4.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-shell-2.2.5.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-cypher-compiler-2.2-2.2.5.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/System/Library/Java/Extensions/AppleScriptEngine.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5.jar
+2015-10-11 07:31:08.269+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-udc-2.2.5.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/lib/neo4j-io-2.2.5.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/commons-logging-1.1.1.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/rt.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/jackson-mapper-asl-1.9.13.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]:  [classpath + loader.0] file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/slf4j-api-1.7.7.jar
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]: Library path:
+2015-10-11 07:31:08.270+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Users/ha/Library/Java/Extensions
+2015-10-11 07:31:08.271+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Library/Java/Extensions
+2015-10-11 07:31:08.271+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Network/Library/Java/Extensions
+2015-10-11 07:31:08.271+0000 INFO  [o.n.k.i.DiagnosticsManager]: /System/Library/Java/Extensions
+2015-10-11 07:31:08.271+0000 INFO  [o.n.k.i.DiagnosticsManager]: /usr/lib/java
+2015-10-11 07:31:08.271+0000 INFO  [o.n.k.i.DiagnosticsManager]: /Applications/XAMPP/xamppfiles/htdocs/code/neo4j
+2015-10-11 07:31:08.271+0000 INFO  [o.n.k.i.DiagnosticsManager]: System.properties:
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/jre/lib
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: org.neo4j.server.properties = conf/neo4j-server.properties
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: gopherProxySet = false
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: path.separator = :
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding.pkg = sun.io
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.country = US
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.launcher = SUN_STANDARD
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.os.patch.level = unknown
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.dir = /Applications/XAMPP/xamppfiles/htdocs/code/neo4j
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.ext.udc.source = tarball
+2015-10-11 07:31:08.272+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.jnu.encoding = UTF-8
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: http.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.home = /Users/ha
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.timezone = Asia/Ho_Chi_Minh
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.encoding = UTF-8
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.name = ha
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.java.command = org.neo4j.server.Bootstrapper
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.arch.data.model = 64
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: user.language = en
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: file.separator = /
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.io.unicode.encoding = UnicodeBig
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.endian = little
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: socksNonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-10-11 07:31:08.273+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.instance = /Applications/xampp/xamppfiles/htdocs/code/neo4j
+2015-10-11 07:31:08.274+0000 INFO  [o.n.k.i.DiagnosticsManager]: ftp.nonProxyHosts = local|*.local|169.254/16|*.169.254/16
+2015-10-11 07:31:08.274+0000 INFO  [o.n.k.i.DiagnosticsManager]: neo4j.home = /Applications/xampp/xamppfiles/htdocs/code/neo4j
+2015-10-11 07:31:08.274+0000 INFO  [o.n.k.i.DiagnosticsManager]: sun.cpu.isalist = 
+2015-10-11 07:31:08.274+0000 INFO  [o.n.k.i.DiagnosticsManager]: Network information:
+2015-10-11 07:31:08.290+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface awdl0:
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:c823:92ff:fe0c:fb75%8
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface en0:
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:9ef3:87ff:fec5:b5fc%4
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 192.168.0.100
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]: Interface lo0:
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: fe80:0:0:0:0:0:0:1%1
+2015-10-11 07:31:08.291+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 0:0:0:0:0:0:0:1
+2015-10-11 07:31:08.292+0000 INFO  [o.n.k.i.DiagnosticsManager]:     address: 127.0.0.1
+2015-10-11 07:31:08.292+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- INITIALIZED diagnostics END ---
+2015-10-11 07:31:09.829+0000 INFO  [o.n.k.NeoStoreDataSource]: Opened logical log [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.transaction.db.1] version=1, lastTxId=18 (clean)
+2015-10-11 07:31:09.839+0000 DEBUG [o.n.k.i.a.i.IndexingService]: Applying recovered updates: hopscotch-table[LongKeyTable|capacity:32, size:0, usage:0.000000]
+2015-10-11 07:31:09.854+0000 INFO  [o.n.k.KernelHealth]: Kernel health set to OK
+2015-10-11 07:31:11.704+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2015-10-11 07:31:11.704+0000 INFO  [o.n.k.i.DiagnosticsManager]: Graph Database: org.neo4j.kernel.EmbeddedGraphDatabase StoreId{creationTime=1444234172637, randomId=-4745743866949650044, storeVersion=14969031248344582, upgradeTime=1444234172637, upgradeId=1}
+2015-10-11 07:31:11.704+0000 INFO  [o.n.k.i.DiagnosticsManager]: Kernel version: Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5
+2015-10-11 07:31:11.704+0000 INFO  [o.n.k.i.DiagnosticsManager]: Neo4j component versions:
+2015-10-11 07:31:11.731+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Lucene Index (neo4j-lucene-index), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - JMX support (neo4j-jmx), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Matching (neo4j-graph-matching), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.1 (neo4j-cypher-compiler-2.1), version: 2.1.8; revision: 2.1.8:2.1-maint:687/5c83ce3a5ddf33259593f719153ce71a6fe89fc7
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Server API (server-api), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Import Command Line Tool (neo4j-import-tool), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Database Kernel (neo4j-kernel), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher (neo4j-cypher), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Server (neo4j-server), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Graph Algorithms (neo4j-graph-algo), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.732+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.2 (neo4j-cypher-compiler-2.2), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 2.0 (neo4j-cypher-compiler-2.0), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2015-10-11 07:31:11.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Consistency Checker (neo4j-consistency-check), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Generic shell (neo4j-shell), version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   Neo4j - Cypher Compiler 1.9 (neo4j-cypher-compiler-1.9), version: 2.0.4; revision: 2.0.4:2.0-maint:130/4a7d10bc274a5d26a180bbe9df25100e8a694748
+2015-10-11 07:31:11.733+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neo4j-udc, version: 2.2.5; revision: 2.2.5:2.2:151/cf9c7fe724d193d2d54c55eb0c82cc9036fc05d6-dirty
+2015-10-11 07:31:11.733+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2015-10-11 07:31:11.737+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2015-10-11 07:31:11.738+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-10-11 07:31:11.756+0000 INFO  [o.n.k.i.DiagnosticsManager]: Store versions:
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NeoStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore v0.A.5
+2015-10-11 07:31:11.757+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore v0.A.5
+2015-10-11 07:31:11.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore v0.A.5
+2015-10-11 07:31:11.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore v0.A.5
+2015-10-11 07:31:11.758+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore v0.A.5
+2015-10-11 07:31:11.758+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2015-10-11 07:31:11.758+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2015-10-11 07:31:11.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-10-11 07:31:11.759+0000 INFO  [o.n.k.i.DiagnosticsManager]: Id usage:
+2015-10-11 07:31:11.760+0000 INFO  [o.n.k.i.DiagnosticsManager]:   SchemaStore: used=1 high=0
+2015-10-11 07:31:11.760+0000 INFO  [o.n.k.i.DiagnosticsManager]:   NodeStore: used=171 high=170
+2015-10-11 07:31:11.760+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipStore: used=253 high=252
+2015-10-11 07:31:11.761+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipTypeStore: used=6 high=5
+2015-10-11 07:31:11.761+0000 INFO  [o.n.k.i.DiagnosticsManager]:   LabelTokenStore: used=2 high=1
+2015-10-11 07:31:11.761+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyStore: used=383 high=382
+2015-10-11 07:31:11.761+0000 INFO  [o.n.k.i.DiagnosticsManager]:   PropertyIndexStore: used=8 high=7
+2015-10-11 07:31:11.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   StringPropertyStore: used=25 high=24
+2015-10-11 07:31:11.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   ArrayPropertyStore: used=173 high=172
+2015-10-11 07:31:11.762+0000 INFO  [o.n.k.i.DiagnosticsManager]:   RelationshipGroupStore: used=1 high=0
+2015-10-11 07:31:11.762+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2015-10-11 07:31:11.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2015-10-11 07:31:11.763+0000 INFO  [o.n.k.i.DiagnosticsManager]: Disk space on partition (Total / Free / Free %): 120135221248 / 53466595328 / 44
+Storage files: (filename : modification date - size)
+2015-10-11 07:31:11.765+0000 INFO  [o.n.k.i.DiagnosticsManager]:   index:
+2015-10-11 07:31:11.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-10-07T23:09:33+0700 - 0.00 B
+2015-10-11 07:31:11.766+0000 INFO  [o.n.k.i.DiagnosticsManager]:   lock: 2015-10-11T14:31:09+0700 - 0.00 B
+2015-10-11 07:31:11.767+0000 INFO  [o.n.k.i.DiagnosticsManager]:   messages.log: 2015-10-11T14:31:11+0700 - 114.38 kB
+2015-10-11 07:31:11.767+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore: 2015-10-11T14:31:09+0700 - 99.00 B
+2015-10-11 07:31:11.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.counts.db.a: 2015-10-07T23:09:33+0700 - 114.00 B
+2015-10-11 07:31:11.768+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.counts.db.b: 2015-10-08T01:22:18+0700 - 914.00 B
+2015-10-11 07:31:11.769+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.id: 2015-10-11T14:31:09+0700 - 9.00 B
+2015-10-11 07:31:11.769+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db: 2015-10-11T14:31:08+0700 - 10.00 B
+2015-10-11 07:31:11.770+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.770+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names: 2015-10-11T14:31:08+0700 - 114.00 B
+2015-10-11 07:31:11.771+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.labeltokenstore.db.names.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db: 2015-10-11T14:31:08+0700 - 2.50 kB
+2015-10-11 07:31:11.772+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.774+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels: 2015-10-11T14:31:08+0700 - 68.00 B
+2015-10-11 07:31:11.775+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.nodestore.db.labels.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.776+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db: 2015-10-11T14:31:08+0700 - 15.33 kB
+2015-10-11 07:31:11.777+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays: 2015-10-11T14:31:08+0700 - 21.63 kB
+2015-10-11 07:31:11.780+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.arrays.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.782+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.784+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index: 2015-10-11T14:31:08+0700 - 72.00 B
+2015-10-11 07:31:11.784+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.785+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys: 2015-10-11T14:31:08+0700 - 342.00 B
+2015-10-11 07:31:11.785+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.index.keys.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.786+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings: 2015-10-11T14:31:08+0700 - 3.13 kB
+2015-10-11 07:31:11.787+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.propertystore.db.strings.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.787+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db: 2015-10-11T14:31:08+0700 - 25.00 B
+2015-10-11 07:31:11.787+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipgroupstore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.788+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db: 2015-10-11T14:31:08+0700 - 8.40 kB
+2015-10-11 07:31:11.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshipstore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db: 2015-10-11T14:31:08+0700 - 30.00 B
+2015-10-11 07:31:11.789+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.790+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names: 2015-10-11T14:31:08+0700 - 266.00 B
+2015-10-11 07:31:11.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.relationshiptypestore.db.names.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.791+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db: 2015-10-11T14:31:08+0700 - 64.00 B
+2015-10-11 07:31:11.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.schemastore.db.id: 2015-10-11T14:31:08+0700 - 9.00 B
+2015-10-11 07:31:11.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.transaction.db.0: 2015-10-07T23:54:18+0700 - 73.75 kB
+2015-10-11 07:31:11.792+0000 INFO  [o.n.k.i.DiagnosticsManager]:   neostore.transaction.db.1: 2015-10-11T14:31:09+0700 - 16.00 B
+2015-10-11 07:31:11.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   rrd: 2015-10-08T01:22:18+0700 - 1.93 MB
+2015-10-11 07:31:11.793+0000 INFO  [o.n.k.i.DiagnosticsManager]:   schema:
+2015-10-11 07:31:11.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:     label:
+2015-10-11 07:31:11.794+0000 INFO  [o.n.k.i.DiagnosticsManager]:       lucene:
+2015-10-11 07:31:11.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:         _0.cfs: 2015-10-07T23:54:18+0700 - 418.00 B
+2015-10-11 07:31:11.795+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments.gen: 2015-10-08T01:22:18+0700 - 20.00 B
+2015-10-11 07:31:11.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:         segments_1: 2015-10-08T01:22:18+0700 - 244.00 B
+2015-10-11 07:31:11.796+0000 INFO  [o.n.k.i.DiagnosticsManager]:         write.lock: 2015-10-11T14:31:09+0700 - 0.00 B
+2015-10-11 07:31:11.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:       - Total: 2015-10-11T14:31:09+0700 - 682.00 B
+2015-10-11 07:31:11.797+0000 INFO  [o.n.k.i.DiagnosticsManager]:     - Total: 2015-10-07T23:09:33+0700 - 682.00 B
+2015-10-11 07:31:11.798+0000 INFO  [o.n.k.i.DiagnosticsManager]:   - Total: 2015-10-07T23:09:33+0700 - 682.00 B
+2015-10-11 07:31:11.798+0000 INFO  [o.n.k.i.DiagnosticsManager]:   store_lock: 2015-10-07T23:09:32+0700 - 0.00 B
+2015-10-11 07:31:11.798+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2015-10-11 07:31:11.891+0000 DEBUG [o.n.k.EmbeddedGraphDatabase]: GC Monitor started. 
+2015-10-11 07:31:11.891+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now ready
+2015-10-11 07:31:11.891+0000 INFO  [o.n.s.d.LifecycleManagingDatabase]: Successfully started database
+2015-10-11 07:31:11.909+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED START ---
+2015-10-11 07:31:12.074+0000 INFO  [o.n.s.CommunityNeoServer]: Starting HTTP on port :7474 with 4 threads available
+2015-10-11 07:31:12.507+0000 INFO  [o.n.s.CommunityNeoServer]: Enabling HTTPS on port :7473
+2015-10-11 07:31:12.795+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.discovery.DiscoveryService, org.neo4j.server.rest.dbms.UserService] at [/]
+2015-10-11 07:31:12.803+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.web.RestfulGraphDatabase, org.neo4j.server.rest.web.TransactionalService, org.neo4j.server.rest.web.CypherService, org.neo4j.server.rest.web.DatabaseMetadataService, org.neo4j.server.rest.web.ExtensionService, org.neo4j.server.rest.web.ResourcesService, org.neo4j.server.rest.web.BatchOperationService] at [/db/data]
+2015-10-11 07:31:12.812+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.management.JmxService, org.neo4j.server.rest.management.RootService, org.neo4j.server.rest.management.VersionAndEditionService] at [/db/manage]
+2015-10-11 07:31:12.815+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Adding JAXRS classes [org.neo4j.server.rest.management.MonitorService, org.neo4j.server.rest.management.console.ConsoleService] at [/db/manage]
+2015-10-11 07:31:12.965+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/webadmin] from [webadmin-html]
+2015-10-11 07:31:13.029+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Found [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar!/webadmin-html]
+2015-10-11 07:31:13.031+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting static content from [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar!/webadmin-html] at [/webadmin]
+2015-10-11 07:31:13.040+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting servlet at [/db/manage]
+2015-10-11 07:31:13.061+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting servlet at [/db/data]
+2015-10-11 07:31:13.062+0000 INFO  [o.n.s.w.Jetty9WebServer]: Mounting static content at [/browser] from [browser]
+2015-10-11 07:31:13.062+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Found [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar!/browser]
+2015-10-11 07:31:13.065+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting static content from [jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar!/browser] at [/browser]
+2015-10-11 07:31:13.066+0000 DEBUG [o.n.s.w.Jetty9WebServer]: Mounting servlet at [/]
+2015-10-11 07:31:15.956+0000 INFO  [o.n.s.CommunityNeoServer]: Server started on: http://localhost:7474/
+2015-10-11 07:31:15.957+0000 INFO  [o.n.s.CommunityNeoServer]: Remote interface ready and available at [http://localhost:7474/]
+2015-10-11 07:31:15.957+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- SERVER STARTED END ---
+2015-10-11 08:28:30.154+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (TheMatrix:Movie {title:'The Matrix', released:1999, tagline:'Welcome to the Real World'})
+CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
+CREATE (Carrie:Person {name:'Carrie-Anne Moss', born:1967})
+CREATE (Laurence:Person {name:'Laurence Fishburne', born:1961})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (AndyW:Person {name:'Andy Wachowski', born:1967})
+CREATE (LanaW:Person {name:'Lana Wachowski', born:1965})
+CREATE (JoelS:Person {name:'Joel Silver', born:1952})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrix),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrix),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrix),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrix),
+  (AndyW)-[:DIRECTED]->(TheMatrix),
+  (LanaW)-[:DIRECTED]->(TheMatrix),
+  (JoelS)-[:PRODUCED]->(TheMatrix)
+  
+CREATE (Emil:Person {name:"Emil Eifrem", born:1978})
+CREATE (Emil)-[:ACTED_IN {roles:["Emil"]}]->(TheMatrix)
+
+CREATE (TheMatrixReloaded:Movie {title:'The Matrix Reloaded', released:2003, tagline:'Free your mind'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixReloaded),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixReloaded),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixReloaded),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixReloaded),
+  (AndyW)-[:DIRECTED]->(TheMatrixReloaded),
+  (LanaW)-[:DIRECTED]->(TheMatrixReloaded),
+  (JoelS)-[:PRODUCED]->(TheMatrixReloaded)
+  
+CREATE (TheMatrixRevolutions:Movie {title:'The Matrix Revolutions', released:2003, tagline:'Everything that has a beginning has an end'})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Neo']}]->(TheMatrixRevolutions),
+  (Carrie)-[:ACTED_IN {roles:['Trinity']}]->(TheMatrixRevolutions),
+  (Laurence)-[:ACTED_IN {roles:['Morpheus']}]->(TheMatrixRevolutions),
+  (Hugo)-[:ACTED_IN {roles:['Agent Smith']}]->(TheMatrixRevolutions),
+  (AndyW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (LanaW)-[:DIRECTED]->(TheMatrixRevolutions),
+  (JoelS)-[:PRODUCED]->(TheMatrixRevolutions)
+  
+CREATE (TheDevilsAdvocate:Movie {title:"The Devil's Advocate", released:1997, tagline:'Evil has its winning ways'})
+CREATE (Charlize:Person {name:'Charlize Theron', born:1975})
+CREATE (Al:Person {name:'Al Pacino', born:1940})
+CREATE (Taylor:Person {name:'Taylor Hackford', born:1944})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Kevin Lomax']}]->(TheDevilsAdvocate),
+  (Charlize)-[:ACTED_IN {roles:['Mary Ann Lomax']}]->(TheDevilsAdvocate),
+  (Al)-[:ACTED_IN {roles:['John Milton']}]->(TheDevilsAdvocate),
+  (Taylor)-[:DIRECTED]->(TheDevilsAdvocate)
+  
+CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992, tagline:"In the heart of the nation's capital, in a courthouse of the U.S. government, one man will stop at nothing to keep his honor, and one will stop at nothing to find the truth."})
+CREATE (TomC:Person {name:'Tom Cruise', born:1962})
+CREATE (JackN:Person {name:'Jack Nicholson', born:1937})
+CREATE (DemiM:Person {name:'Demi Moore', born:1962})
+CREATE (KevinB:Person {name:'Kevin Bacon', born:1958})
+CREATE (KieferS:Person {name:'Kiefer Sutherland', born:1966})
+CREATE (NoahW:Person {name:'Noah Wyle', born:1971})
+CREATE (CubaG:Person {name:'Cuba Gooding Jr.', born:1968})
+CREATE (KevinP:Person {name:'Kevin Pollak', born:1957})
+CREATE (JTW:Person {name:'J.T. Walsh', born:1943})
+CREATE (JamesM:Person {name:'James Marshall', born:1967})
+CREATE (ChristopherG:Person {name:'Christopher Guest', born:1948})
+CREATE (RobR:Person {name:'Rob Reiner', born:1947})
+CREATE (AaronS:Person {name:'Aaron Sorkin', born:1961})
+CREATE
+  (TomC)-[:ACTED_IN {roles:['Lt. Daniel Kaffee']}]->(AFewGoodMen),
+  (JackN)-[:ACTED_IN {roles:['Col. Nathan R. Jessup']}]->(AFewGoodMen),
+  (DemiM)-[:ACTED_IN {roles:['Lt. Cdr. JoAnne Galloway']}]->(AFewGoodMen),
+  (KevinB)-[:ACTED_IN {roles:['Capt. Jack Ross']}]->(AFewGoodMen),
+  (KieferS)-[:ACTED_IN {roles:['Lt. Jonathan Kendrick']}]->(AFewGoodMen),
+  (NoahW)-[:ACTED_IN {roles:['Cpl. Jeffrey Barnes']}]->(AFewGoodMen),
+  (CubaG)-[:ACTED_IN {roles:['Cpl. Carl Hammaker']}]->(AFewGoodMen),
+  (KevinP)-[:ACTED_IN {roles:['Lt. Sam Weinberg']}]->(AFewGoodMen),
+  (JTW)-[:ACTED_IN {roles:['Lt. Col. Matthew Andrew Markinson']}]->(AFewGoodMen),
+  (JamesM)-[:ACTED_IN {roles:['Pfc. Louden Downey']}]->(AFewGoodMen),
+  (ChristopherG)-[:ACTED_IN {roles:['Dr. Stone']}]->(AFewGoodMen),
+  (AaronS)-[:ACTED_IN {roles:['Man in Bar']}]->(AFewGoodMen),
+  (RobR)-[:DIRECTED]->(AFewGoodMen),
+  (AaronS)-[:WROTE]->(AFewGoodMen)
+  
+CREATE (TopGun:Movie {title:"Top Gun", released:1986, tagline:'I feel the need, the need for speed.'})
+CREATE (KellyM:Person {name:'Kelly McGillis', born:1957})
+CREATE (ValK:Person {name:'Val Kilmer', born:1959})
+CREATE (AnthonyE:Person {name:'Anthony Edwards', born:1962})
+CREATE (TomS:Person {name:'Tom Skerritt', born:1933})
+CREATE (MegR:Person {name:'Meg Ryan', born:1961})
+CREATE (TonyS:Person {name:'Tony Scott', born:1944})
+CREATE (JimC:Person {name:'Jim Cash', born:1941})
+CREATE
+  (TomC)-[:ACTED_IN {roles:['Maverick']}]->(TopGun),
+  (KellyM)-[:ACTED_IN {roles:['Charlie']}]->(TopGun),
+  (ValK)-[:ACTED_IN {roles:['Iceman']}]->(TopGun),
+  (AnthonyE)-[:ACTED_IN {roles:['Goose']}]->(TopGun),
+  (TomS)-[:ACTED_IN {roles:['Viper']}]->(TopGun),
+  (MegR)-[:ACTED_IN {roles:['Carole']}]->(TopGun),
+  (TonyS)-[:DIRECTED]->(TopGun),
+  (JimC)-[:WROTE]->(TopGun)
+  
+CREATE (JerryMaguire:Movie {title:'Jerry Maguire', released:2000, tagline:'The rest of his life begins now.'})
+CREATE (ReneeZ:Person {name:'Renee Zellweger', born:1969})
+CREATE (KellyP:Person {name:'Kelly Preston', born:1962})
+CREATE (JerryO:Person {name:"Jerry O'Connell", born:1974})
+CREATE (JayM:Person {name:'Jay Mohr', born:1970})
+CREATE (BonnieH:Person {name:'Bonnie Hunt', born:1961})
+CREATE (ReginaK:Person {name:'Regina King', born:1971})
+CREATE (JonathanL:Person {name:'Jonathan Lipnicki', born:1996})
+CREATE (CameronC:Person {name:'Cameron Crowe', born:1957})
+CREATE
+  (TomC)-[:ACTED_IN {roles:['Jerry Maguire']}]->(JerryMaguire),
+  (CubaG)-[:ACTED_IN {roles:['Rod Tidwell']}]->(JerryMaguire),
+  (ReneeZ)-[:ACTED_IN {roles:['Dorothy Boyd']}]->(JerryMaguire),
+  (KellyP)-[:ACTED_IN {roles:['Avery Bishop']}]->(JerryMaguire),
+  (JerryO)-[:ACTED_IN {roles:['Frank Cushman']}]->(JerryMaguire),
+  (JayM)-[:ACTED_IN {roles:['Bob Sugar']}]->(JerryMaguire),
+  (BonnieH)-[:ACTED_IN {roles:['Laurel Boyd']}]->(JerryMaguire),
+  (ReginaK)-[:ACTED_IN {roles:['Marcee Tidwell']}]->(JerryMaguire),
+  (JonathanL)-[:ACTED_IN {roles:['Ray Boyd']}]->(JerryMaguire),
+  (CameronC)-[:DIRECTED]->(JerryMaguire),
+  (CameronC)-[:PRODUCED]->(JerryMaguire),
+  (CameronC)-[:WROTE]->(JerryMaguire)
+  
+CREATE (StandByMe:Movie {title:"Stand By Me", released:1986, tagline:"For some, it's the last real taste of innocence, and the first real taste of life. But for everyone, it's the time that memories are made of."})
+CREATE (RiverP:Person {name:'River Phoenix', born:1970})
+CREATE (CoreyF:Person {name:'Corey Feldman', born:1971})
+CREATE (WilW:Person {name:'Wil Wheaton', born:1972})
+CREATE (JohnC:Person {name:'John Cusack', born:1966})
+CREATE (MarshallB:Person {name:'Marshall Bell', born:1942})
+CREATE
+  (WilW)-[:ACTED_IN {roles:['Gordie Lachance']}]->(StandByMe),
+  (RiverP)-[:ACTED_IN {roles:['Chris Chambers']}]->(StandByMe),
+  (JerryO)-[:ACTED_IN {roles:['Vern Tessio']}]->(StandByMe),
+  (CoreyF)-[:ACTED_IN {roles:['Teddy Duchamp']}]->(StandByMe),
+  (JohnC)-[:ACTED_IN {roles:['Denny Lachance']}]->(StandByMe),
+  (KieferS)-[:ACTED_IN {roles:['Ace Merrill']}]->(StandByMe),
+  (MarshallB)-[:ACTED_IN {roles:['Mr. Lachance']}]->(StandByMe),
+  (RobR)-[:DIRECTED]->(StandByMe)
+  
+CREATE (AsGoodAsItGets:Movie {title:'As Good as It Gets', released:1997, tagline:'A comedy from the heart that goes for the throat.'})
+CREATE (HelenH:Person {name:'Helen Hunt', born:1963})
+CREATE (GregK:Person {name:'Greg Kinnear', born:1963})
+CREATE (JamesB:Person {name:'James L. Brooks', born:1940})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Melvin Udall']}]->(AsGoodAsItGets),
+  (HelenH)-[:ACTED_IN {roles:['Carol Connelly']}]->(AsGoodAsItGets),
+  (GregK)-[:ACTED_IN {roles:['Simon Bishop']}]->(AsGoodAsItGets),
+  (CubaG)-[:ACTED_IN {roles:['Frank Sachs']}]->(AsGoodAsItGets),
+  (JamesB)-[:DIRECTED]->(AsGoodAsItGets)
+  
+CREATE (WhatDreamsMayCome:Movie {title:'What Dreams May Come', released:1998, tagline:'After life there is more. The end is just the beginning.'})
+CREATE (AnnabellaS:Person {name:'Annabella Sciorra', born:1960})
+CREATE (MaxS:Person {name:'Max von Sydow', born:1929})
+CREATE (WernerH:Person {name:'Werner Herzog', born:1942})
+CREATE (Robin:Person {name:'Robin Williams', born:1951})
+CREATE (VincentW:Person {name:'Vincent Ward', born:1956})
+CREATE
+  (Robin)-[:ACTED_IN {roles:['Chris Nielsen']}]->(WhatDreamsMayCome),
+  (CubaG)-[:ACTED_IN {roles:['Albert Lewis']}]->(WhatDreamsMayCome),
+  (AnnabellaS)-[:ACTED_IN {roles:['Annie Collins-Nielsen']}]->(WhatDreamsMayCome),
+  (MaxS)-[:ACTED_IN {roles:['The Tracker']}]->(WhatDreamsMayCome),
+  (WernerH)-[:ACTED_IN {roles:['The Face']}]->(WhatDreamsMayCome),
+  (VincentW)-[:DIRECTED]->(WhatDreamsMayCome)
+  
+CREATE (SnowFallingonCedars:Movie {title:'Snow Falling on Cedars', released:1999, tagline:'First loves last. Forever.'})
+CREATE (EthanH:Person {name:'Ethan Hawke', born:1970})
+CREATE (RickY:Person {name:'Rick Yune', born:1971})
+CREATE (JamesC:Person {name:'James Cromwell', born:1940})
+CREATE (ScottH:Person {name:'Scott Hicks', born:1953})
+CREATE
+  (EthanH)-[:ACTED_IN {roles:['Ishmael Chambers']}]->(SnowFallingonCedars),
+  (RickY)-[:ACTED_IN {roles:['Kazuo Miyamoto']}]->(SnowFallingonCedars),
+  (MaxS)-[:ACTED_IN {roles:['Nels Gudmundsson']}]->(SnowFallingonCedars),
+  (JamesC)-[:ACTED_IN {roles:['Judge Fielding']}]->(SnowFallingonCedars),
+  (ScottH)-[:DIRECTED]->(SnowFallingonCedars)
+  
+CREATE (YouveGotMail:Movie {title:"You've Got Mail", released:1998, tagline:'At odds in life... in love on-line.'})
+CREATE (ParkerP:Person {name:'Parker Posey', born:1968})
+CREATE (DaveC:Person {name:'Dave Chappelle', born:1973})
+CREATE (SteveZ:Person {name:'Steve Zahn', born:1967})
+CREATE (TomH:Person {name:'Tom Hanks', born:1956})
+CREATE (NoraE:Person {name:'Nora Ephron', born:1941})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Joe Fox']}]->(YouveGotMail),
+  (MegR)-[:ACTED_IN {roles:['Kathleen Kelly']}]->(YouveGotMail),
+  (GregK)-[:ACTED_IN {roles:['Frank Navasky']}]->(YouveGotMail),
+  (ParkerP)-[:ACTED_IN {roles:['Patricia Eden']}]->(YouveGotMail),
+  (DaveC)-[:ACTED_IN {roles:['Kevin Jackson']}]->(YouveGotMail),
+  (SteveZ)-[:ACTED_IN {roles:['George Pappas']}]->(YouveGotMail),
+  (NoraE)-[:DIRECTED]->(YouveGotMail)
+  
+CREATE (SleeplessInSeattle:Movie {title:'Sleepless in Seattle', released:1993, tagline:'What if someone you never met, someone you never saw, someone you never knew was the only someone for you?'})
+CREATE (RitaW:Person {name:'Rita Wilson', born:1956})
+CREATE (BillPull:Person {name:'Bill Pullman', born:1953})
+CREATE (VictorG:Person {name:'Victor Garber', born:1949})
+CREATE (RosieO:Person {name:"Rosie O'Donnell", born:1962})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Sam Baldwin']}]->(SleeplessInSeattle),
+  (MegR)-[:ACTED_IN {roles:['Annie Reed']}]->(SleeplessInSeattle),
+  (RitaW)-[:ACTED_IN {roles:['Suzy']}]->(SleeplessInSeattle),
+  (BillPull)-[:ACTED_IN {roles:['Walter']}]->(SleeplessInSeattle),
+  (VictorG)-[:ACTED_IN {roles:['Greg']}]->(SleeplessInSeattle),
+  (RosieO)-[:ACTED_IN {roles:['Becky']}]->(SleeplessInSeattle),
+  (NoraE)-[:DIRECTED]->(SleeplessInSeattle)
+  
+CREATE (JoeVersustheVolcano:Movie {title:'Joe Versus the Volcano', released:1990, tagline:'A story of love, lava and burning desire.'})
+CREATE (JohnS:Person {name:'John Patrick Stanley', born:1950})
+CREATE (Nathan:Person {name:'Nathan Lane', born:1956})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Joe Banks']}]->(JoeVersustheVolcano),
+  (MegR)-[:ACTED_IN {roles:['DeDe', 'Angelica Graynamore', 'Patricia Graynamore']}]->(JoeVersustheVolcano),
+  (Nathan)-[:ACTED_IN {roles:['Baw']}]->(JoeVersustheVolcano),
+  (JohnS)-[:DIRECTED]->(JoeVersustheVolcano)
+  
+CREATE (WhenHarryMetSally:Movie {title:'When Harry Met Sally', released:1998, tagline:'At odds in life... in love on-line.'})
+CREATE (BillyC:Person {name:'Billy Crystal', born:1948})
+CREATE (CarrieF:Person {name:'Carrie Fisher', born:1956})
+CREATE (BrunoK:Person {name:'Bruno Kirby', born:1949})
+CREATE
+  (BillyC)-[:ACTED_IN {roles:['Harry Burns']}]->(WhenHarryMetSally),
+  (MegR)-[:ACTED_IN {roles:['Sally Albright']}]->(WhenHarryMetSally),
+  (CarrieF)-[:ACTED_IN {roles:['Marie']}]->(WhenHarryMetSally),
+  (BrunoK)-[:ACTED_IN {roles:['Jess']}]->(WhenHarryMetSally),
+  (RobR)-[:DIRECTED]->(WhenHarryMetSally),
+  (RobR)-[:PRODUCED]->(WhenHarryMetSally),
+  (NoraE)-[:PRODUCED]->(WhenHarryMetSally),
+  (NoraE)-[:WROTE]->(WhenHarryMetSally)
+  
+CREATE (ThatThingYouDo:Movie {title:'That Thing You Do', released:1996, tagline:'In every life there comes a time when that thing you dream becomes that thing you do'})
+CREATE (LivT:Person {name:'Liv Tyler', born:1977})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Mr. White']}]->(ThatThingYouDo),
+  (LivT)-[:ACTED_IN {roles:['Faye Dolan']}]->(ThatThingYouDo),
+  (Charlize)-[:ACTED_IN {roles:['Tina']}]->(ThatThingYouDo),
+  (TomH)-[:DIRECTED]->(ThatThingYouDo)
+  
+CREATE (TheReplacements:Movie {title:'The Replacements', released:2000, tagline:'Pain heals, Chicks dig scars... Glory lasts forever'})
+CREATE (Brooke:Person {name:'Brooke Langton', born:1970})
+CREATE (Gene:Person {name:'Gene Hackman', born:1930})
+CREATE (Orlando:Person {name:'Orlando Jones', born:1968})
+CREATE (Howard:Person {name:'Howard Deutch', born:1950})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Shane Falco']}]->(TheReplacements),
+  (Brooke)-[:ACTED_IN {roles:['Annabelle Farrell']}]->(TheReplacements),
+  (Gene)-[:ACTED_IN {roles:['Jimmy McGinty']}]->(TheReplacements),
+  (Orlando)-[:ACTED_IN {roles:['Clifford Franklin']}]->(TheReplacements),
+  (Howard)-[:DIRECTED]->(TheReplacements)
+  
+CREATE (RescueDawn:Movie {title:'RescueDawn', released:2006, tagline:"Based on the extraordinary true story of one man's fight for freedom"})
+CREATE (ChristianB:Person {name:'Christian Bale', born:1974})
+CREATE (ZachG:Person {name:'Zach Grenier', born:1954})
+CREATE
+  (MarshallB)-[:ACTED_IN {roles:['Admiral']}]->(RescueDawn),
+  (ChristianB)-[:ACTED_IN {roles:['Dieter Dengler']}]->(RescueDawn),
+  (ZachG)-[:ACTED_IN {roles:['Squad Leader']}]->(RescueDawn),
+  (SteveZ)-[:ACTED_IN {roles:['Duane']}]->(RescueDawn),
+  (WernerH)-[:DIRECTED]->(RescueDawn)
+  
+CREATE (TheBirdcage:Movie {title:'The Birdcage', released:1996, tagline:'Come as you are'})
+CREATE (MikeN:Person {name:'Mike Nichols', born:1931})
+CREATE
+  (Robin)-[:ACTED_IN {roles:['Armand Goldman']}]->(TheBirdcage),
+  (Nathan)-[:ACTED_IN {roles:['Albert Goldman']}]->(TheBirdcage),
+  (Gene)-[:ACTED_IN {roles:['Sen. Kevin Keeley']}]->(TheBirdcage),
+  (MikeN)-[:DIRECTED]->(TheBirdcage)
+  
+CREATE (Unforgiven:Movie {title:'Unforgiven', released:1992, tagline:"It's a hell of a thing, killing a man"})
+CREATE (RichardH:Person {name:'Richard Harris', born:1930})
+CREATE (ClintE:Person {name:'Clint Eastwood', born:1930})
+CREATE
+  (RichardH)-[:ACTED_IN {roles:['English Bob']}]->(Unforgiven),
+  (ClintE)-[:ACTED_IN {roles:['Bill Munny']}]->(Unforgiven),
+  (Gene)-[:ACTED_IN {roles:['Little Bill Daggett']}]->(Unforgiven),
+  (ClintE)-[:DIRECTED]->(Unforgiven)
+  
+CREATE (JohnnyMnemonic:Movie {title:'Johnny Mnemonic', released:1995, tagline:'The hottest data on earth. In the coolest head in town'})
+CREATE (Takeshi:Person {name:'Takeshi Kitano', born:1947})
+CREATE (Dina:Person {name:'Dina Meyer', born:1968})
+CREATE (IceT:Person {name:'Ice-T', born:1958})
+CREATE (RobertL:Person {name:'Robert Longo', born:1953})
+CREATE
+  (Keanu)-[:ACTED_IN {roles:['Johnny Mnemonic']}]->(JohnnyMnemonic),
+  (Takeshi)-[:ACTED_IN {roles:['Takahashi']}]->(JohnnyMnemonic),
+  (Dina)-[:ACTED_IN {roles:['Jane']}]->(JohnnyMnemonic),
+  (IceT)-[:ACTED_IN {roles:['J-Bone']}]->(JohnnyMnemonic),
+  (RobertL)-[:DIRECTED]->(JohnnyMnemonic)
+  
+CREATE (CloudAtlas:Movie {title:'Cloud Atlas', released:2012, tagline:'Everything is connected'})
+CREATE (HalleB:Person {name:'Halle Berry', born:1966})
+CREATE (JimB:Person {name:'Jim Broadbent', born:1949})
+CREATE (TomT:Person {name:'Tom Tykwer', born:1965})
+CREATE (DavidMitchell:Person {name:'David Mitchell', born:1969})
+CREATE (StefanArndt:Person {name:'Stefan Arndt', born:1961})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Zachry', 'Dr. Henry Goose', 'Isaac Sachs', 'Dermot Hoggins']}]->(CloudAtlas),
+  (Hugo)-[:ACTED_IN {roles:['Bill Smoke', 'Haskell Moore', 'Tadeusz Kesselring', 'Nurse Noakes', 'Boardman Mephi', 'Old Georgie']}]->(CloudAtlas),
+  (HalleB)-[:ACTED_IN {roles:['Luisa Rey', 'Jocasta Ayrs', 'Ovid', 'Meronym']}]->(CloudAtlas),
+  (JimB)-[:ACTED_IN {roles:['Vyvyan Ayrs', 'Captain Molyneux', 'Timothy Cavendish']}]->(CloudAtlas),
+  (TomT)-[:DIRECTED]->(CloudAtlas),
+  (AndyW)-[:DIRECTED]->(CloudAtlas),
+  (LanaW)-[:DIRECTED]->(CloudAtlas),
+  (DavidMitchell)-[:WROTE]->(CloudAtlas),
+  (StefanArndt)-[:PRODUCED]->(CloudAtlas)
+  
+CREATE (TheDaVinciCode:Movie {title:'The Da Vinci Code', released:2006, tagline:'Break The Codes'})
+CREATE (IanM:Person {name:'Ian McKellen', born:1939})
+CREATE (AudreyT:Person {name:'Audrey Tautou', born:1976})
+CREATE (PaulB:Person {name:'Paul Bettany', born:1971})
+CREATE (RonH:Person {name:'Ron Howard', born:1954})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Dr. Robert Langdon']}]->(TheDaVinciCode),
+  (IanM)-[:ACTED_IN {roles:['Sir Leight Teabing']}]->(TheDaVinciCode),
+  (AudreyT)-[:ACTED_IN {roles:['Sophie Neveu']}]->(TheDaVinciCode),
+  (PaulB)-[:ACTED_IN {roles:['Silas']}]->(TheDaVinciCode),
+  (RonH)-[:DIRECTED]->(TheDaVinciCode)
+  
+CREATE (VforVendetta:Movie {title:'V for Vendetta', released:2006, tagline:'Freedom! Forever!'})
+CREATE (NatalieP:Person {name:'Natalie Portman', born:1981})
+CREATE (StephenR:Person {name:'Stephen Rea', born:1946})
+CREATE (JohnH:Person {name:'John Hurt', born:1940})
+CREATE (BenM:Person {name: 'Ben Miles', born:1967})
+CREATE
+  (Hugo)-[:ACTED_IN {roles:['V']}]->(VforVendetta),
+  (NatalieP)-[:ACTED_IN {roles:['Evey Hammond']}]->(VforVendetta),
+  (StephenR)-[:ACTED_IN {roles:['Eric Finch']}]->(VforVendetta),
+  (JohnH)-[:ACTED_IN {roles:['High Chancellor Adam Sutler']}]->(VforVendetta),
+  (BenM)-[:ACTED_IN {roles:['Dascomb']}]->(VforVendetta),
+  (JamesM)-[:DIRECTED]->(VforVendetta),
+  (AndyW)-[:PRODUCED]->(VforVendetta),
+  (LanaW)-[:PRODUCED]->(VforVendetta),
+  (JoelS)-[:PRODUCED]->(VforVendetta),
+  (AndyW)-[:WROTE]->(VforVendetta),
+  (LanaW)-[:WROTE]->(VforVendetta)
+  
+CREATE (SpeedRacer:Movie {title:'Speed Racer', released:2008, tagline:'Speed has no limits'})
+CREATE (EmileH:Person {name:'Emile Hirsch', born:1985})
+CREATE (JohnG:Person {name:'John Goodman', born:1960})
+CREATE (SusanS:Person {name:'Susan Sarandon', born:1946})
+CREATE (MatthewF:Person {name:'Matthew Fox', born:1966})
+CREATE (ChristinaR:Person {name:'Christina Ricci', born:1980})
+CREATE (Rain:Person {name:'Rain', born:1982})
+CREATE
+  (EmileH)-[:ACTED_IN {roles:['Speed Racer']}]->(SpeedRacer),
+  (JohnG)-[:ACTED_IN {roles:['Pops']}]->(SpeedRacer),
+  (SusanS)-[:ACTED_IN {roles:['Mom']}]->(SpeedRacer),
+  (MatthewF)-[:ACTED_IN {roles:['Racer X']}]->(SpeedRacer),
+  (ChristinaR)-[:ACTED_IN {roles:['Trixie']}]->(SpeedRacer),
+  (Rain)-[:ACTED_IN {roles:['Taejo Togokahn']}]->(SpeedRacer),
+  (BenM)-[:ACTED_IN {roles:['Cass Jones']}]->(SpeedRacer),
+  (AndyW)-[:DIRECTED]->(SpeedRacer),
+  (LanaW)-[:DIRECTED]->(SpeedRacer),
+  (AndyW)-[:WROTE]->(SpeedRacer),
+  (LanaW)-[:WROTE]->(SpeedRacer),
+  (JoelS)-[:PRODUCED]->(SpeedRacer)
+  
+CREATE (NinjaAssassin:Movie {title:'Ninja Assassin', released:2009, tagline:'Prepare to enter a secret world of assassins'})
+CREATE (NaomieH:Person {name:'Naomie Harris'})
+CREATE
+  (Rain)-[:ACTED_IN {roles:['Raizo']}]->(NinjaAssassin),
+  (NaomieH)-[:ACTED_IN {roles:['Mika Coretti']}]->(NinjaAssassin),
+  (RickY)-[:ACTED_IN {roles:['Takeshi']}]->(NinjaAssassin),
+  (BenM)-[:ACTED_IN {roles:['Ryan Maslow']}]->(NinjaAssassin),
+  (JamesM)-[:DIRECTED]->(NinjaAssassin),
+  (AndyW)-[:PRODUCED]->(NinjaAssassin),
+  (LanaW)-[:PRODUCED]->(NinjaAssassin),
+  (JoelS)-[:PRODUCED]->(NinjaAssassin)
+  
+CREATE (TheGreenMile:Movie {title:'The Green Mile', released:1999, tagline:"Walk a mile you'll never forget."})
+CREATE (MichaelD:Person {name:'Michael Clarke Duncan', born:1957})
+CREATE (DavidM:Person {name:'David Morse', born:1953})
+CREATE (SamR:Person {name:'Sam Rockwell', born:1968})
+CREATE (GaryS:Person {name:'Gary Sinise', born:1955})
+CREATE (PatriciaC:Person {name:'Patricia Clarkson', born:1959})
+CREATE (FrankD:Person {name:'Frank Darabont', born:1959})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Paul Edgecomb']}]->(TheGreenMile),
+  (MichaelD)-[:ACTED_IN {roles:['John Coffey']}]->(TheGreenMile),
+  (DavidM)-[:ACTED_IN {roles:['Brutus "Brutal" Howell']}]->(TheGreenMile),
+  (BonnieH)-[:ACTED_IN {roles:['Jan Edgecomb']}]->(TheGreenMile),
+  (JamesC)-[:ACTED_IN {roles:['Warden Hal Moores']}]->(TheGreenMile),
+  (SamR)-[:ACTED_IN {roles:['"Wild Bill" Wharton']}]->(TheGreenMile),
+  (GaryS)-[:ACTED_IN {roles:['Burt Hammersmith']}]->(TheGreenMile),
+  (PatriciaC)-[:ACTED_IN {roles:['Melinda Moores']}]->(TheGreenMile),
+  (FrankD)-[:DIRECTED]->(TheGreenMile)
+  
+CREATE (FrostNixon:Movie {title:'Frost/Nixon', released:2008, tagline:'400 million people were waiting for the truth.'})
+CREATE (FrankL:Person {name:'Frank Langella', born:1938})
+CREATE (MichaelS:Person {name:'Michael Sheen', born:1969})
+CREATE (OliverP:Person {name:'Oliver Platt', born:1960})
+CREATE
+  (FrankL)-[:ACTED_IN {roles:['Richard Nixon']}]->(FrostNixon),
+  (MichaelS)-[:ACTED_IN {roles:['David Frost']}]->(FrostNixon),
+  (KevinB)-[:ACTED_IN {roles:['Jack Brennan']}]->(FrostNixon),
+  (OliverP)-[:ACTED_IN {roles:['Bob Zelnick']}]->(FrostNixon),
+  (SamR)-[:ACTED_IN {roles:['James Reston, Jr.']}]->(FrostNixon),
+  (RonH)-[:DIRECTED]->(FrostNixon)
+  
+CREATE (Hoffa:Movie {title:'Hoffa', released:1992, tagline:"He didn't want law. He wanted justice."})
+CREATE (DannyD:Person {name:'Danny DeVito', born:1944})
+CREATE (JohnR:Person {name:'John C. Reilly', born:1965})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Hoffa']}]->(Hoffa),
+  (DannyD)-[:ACTED_IN {roles:['Robert "Bobby" Ciaro']}]->(Hoffa),
+  (JTW)-[:ACTED_IN {roles:['Frank Fitzsimmons']}]->(Hoffa),
+  (JohnR)-[:ACTED_IN {roles:['Peter "Pete" Connelly']}]->(Hoffa),
+  (DannyD)-[:DIRECTED]->(Hoffa)
+  
+CREATE (Apollo13:Movie {title:'Apollo 13', released:1995, tagline:'Houston, we have a problem.'})
+CREATE (EdH:Person {name:'Ed Harris', born:1950})
+CREATE (BillPax:Person {name:'Bill Paxton', born:1955})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Jim Lovell']}]->(Apollo13),
+  (KevinB)-[:ACTED_IN {roles:['Jack Swigert']}]->(Apollo13),
+  (EdH)-[:ACTED_IN {roles:['Gene Kranz']}]->(Apollo13),
+  (BillPax)-[:ACTED_IN {roles:['Fred Haise']}]->(Apollo13),
+  (GaryS)-[:ACTED_IN {roles:['Ken Mattingly']}]->(Apollo13),
+  (RonH)-[:DIRECTED]->(Apollo13)
+  
+CREATE (Twister:Movie {title:'Twister', released:1996, tagline:"Don't Breathe. Don't Look Back."})
+CREATE (PhilipH:Person {name:'Philip Seymour Hoffman', born:1967})
+CREATE (JanB:Person {name:'Jan de Bont', born:1943})
+CREATE
+  (BillPax)-[:ACTED_IN {roles:['Bill Harding']}]->(Twister),
+  (HelenH)-[:ACTED_IN {roles:['Dr. Jo Harding']}]->(Twister),
+  (ZachG)-[:ACTED_IN {roles:['Eddie']}]->(Twister),
+  (PhilipH)-[:ACTED_IN {roles:['Dustin "Dusty" Davis']}]->(Twister),
+  (JanB)-[:DIRECTED]->(Twister)
+  
+CREATE (CastAway:Movie {title:'Cast Away', released:2000, tagline:'At the edge of the world, his journey begins.'})
+CREATE (RobertZ:Person {name:'Robert Zemeckis', born:1951})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Chuck Noland']}]->(CastAway),
+  (HelenH)-[:ACTED_IN {roles:['Kelly Frears']}]->(CastAway),
+  (RobertZ)-[:DIRECTED]->(CastAway)
+  
+CREATE (OneFlewOvertheCuckoosNest:Movie {title:"One Flew Over the Cuckoo's Nest", released:1975, tagline:"If he's crazy, what does that make you?"})
+CREATE (MilosF:Person {name:'Milos Forman', born:1932})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Randle McMurphy']}]->(OneFlewOvertheCuckoosNest),
+  (DannyD)-[:ACTED_IN {roles:['Martini']}]->(OneFlewOvertheCuckoosNest),
+  (MilosF)-[:DIRECTED]->(OneFlewOvertheCuckoosNest)
+  
+CREATE (SomethingsGottaGive:Movie {title:"Something's Gotta Give", released:2003})
+CREATE (DianeK:Person {name:'Diane Keaton', born:1946})
+CREATE (NancyM:Person {name:'Nancy Meyers', born:1949})
+CREATE
+  (JackN)-[:ACTED_IN {roles:['Harry Sanborn']}]->(SomethingsGottaGive),
+  (DianeK)-[:ACTED_IN {roles:['Erica Barry']}]->(SomethingsGottaGive),
+  (Keanu)-[:ACTED_IN {roles:['Julian Mercer']}]->(SomethingsGottaGive),
+  (NancyM)-[:DIRECTED]->(SomethingsGottaGive),
+  (NancyM)-[:PRODUCED]->(SomethingsGottaGive),
+  (NancyM)-[:WROTE]->(SomethingsGottaGive)
+  
+CREATE (BicentennialMan:Movie {title:'Bicentennial Man', released:1999, tagline:"One robot's 200 year journey to become an ordinary man."})
+CREATE (ChrisC:Person {name:'Chris Columbus', born:1958})
+CREATE
+  (Robin)-[:ACTED_IN {roles:['Andrew Marin']}]->(BicentennialMan),
+  (OliverP)-[:ACTED_IN {roles:['Rupert Burns']}]->(BicentennialMan),
+  (ChrisC)-[:DIRECTED]->(BicentennialMan)
+  
+CREATE (CharlieWilsonsWar:Movie {title:"Charlie Wilson's War", released:2007, tagline:"A stiff drink. A little mascara. A lot of nerve. Who said they couldn't bring down the Soviet empire."})
+CREATE (JuliaR:Person {name:'Julia Roberts', born:1967})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Rep. Charlie Wilson']}]->(CharlieWilsonsWar),
+  (JuliaR)-[:ACTED_IN {roles:['Joanne Herring']}]->(CharlieWilsonsWar),
+  (PhilipH)-[:ACTED_IN {roles:['Gust Avrakotos']}]->(CharlieWilsonsWar),
+  (MikeN)-[:DIRECTED]->(CharlieWilsonsWar)
+  
+CREATE (ThePolarExpress:Movie {title:'The Polar Express', released:2004, tagline:'This Holiday Season… Believe'})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Hero Boy', 'Father', 'Conductor', 'Hobo', 'Scrooge', 'Santa Claus']}]->(ThePolarExpress),
+  (RobertZ)-[:DIRECTED]->(ThePolarExpress)
+  
+CREATE (ALeagueofTheirOwn:Movie {title:'A League of Their Own', released:1992, tagline:'Once in a lifetime you get a chance to do something different.'})
+CREATE (Madonna:Person {name:'Madonna', born:1954})
+CREATE (GeenaD:Person {name:'Geena Davis', born:1956})
+CREATE (LoriP:Person {name:'Lori Petty', born:1963})
+CREATE (PennyM:Person {name:'Penny Marshall', born:1943})
+CREATE
+  (TomH)-[:ACTED_IN {roles:['Jimmy Dugan']}]->(ALeagueofTheirOwn),
+  (GeenaD)-[:ACTED_IN {roles:['Dottie Hinson']}]->(ALeagueofTheirOwn),
+  (LoriP)-[:ACTED_IN {roles:['Kit Keller']}]->(ALeagueofTheirOwn),
+  (RosieO)-[:ACTED_IN {roles:['Doris Murphy']}]->(ALeagueofTheirOwn),
+  (Madonna)-[:ACTED_IN {roles:['"All the Way" Mae Mordabito']}]->(ALeagueofTheirOwn),
+  (BillPax)-[:ACTED_IN {roles:['Bob Hinson']}]->(ALeagueofTheirOwn),
+  (PennyM)-[:DIRECTED]->(ALeagueofTheirOwn)
+  
+CREATE (PaulBlythe:Person {name:'Paul Blythe'})
+CREATE (AngelaScope:Person {name:'Angela Scope'})
+CREATE (JessicaThompson:Person {name:'Jessica Thompson'})
+CREATE (JamesThompson:Person {name:'James Thompson'})
+
+CREATE
+  (JamesThompson)-[:FOLLOWS]->(JessicaThompson),
+  (AngelaScope)-[:FOLLOWS]->(JessicaThompson),
+  (PaulBlythe)-[:FOLLOWS]->(AngelaScope)
+  
+CREATE
+  (JessicaThompson)-[:REVIEWED {summary:'An amazing journey', rating:95}]->(CloudAtlas),
+  (JessicaThompson)-[:REVIEWED {summary:'Silly, but fun', rating:65}]->(TheReplacements),
+  (JamesThompson)-[:REVIEWED {summary:'The coolest football movie ever', rating:100}]->(TheReplacements),
+  (AngelaScope)-[:REVIEWED {summary:'Pretty funny at times', rating:62}]->(TheReplacements),
+  (JessicaThompson)-[:REVIEWED {summary:'Dark, but compelling', rating:85}]->(Unforgiven),
+  (JessicaThompson)-[:REVIEWED {summary:"Slapstick redeemed only by the Robin Williams and Gene Hackman's stellar performances", rating:45}]->(TheBirdcage),
+  (JessicaThompson)-[:REVIEWED {summary:'A solid romp', rating:68}]->(TheDaVinciCode),
+  (JamesThompson)-[:REVIEWED {summary:'Fun, but a little far fetched', rating:65}]->(TheDaVinciCode),
+  (JessicaThompson)-[:REVIEWED {summary:'You had me at Jerry', rating:92}]->(JerryMaguire)
+  
+WITH TomH as a
+MATCH (a)-[:ACTED_IN]->(m)<-[:DIRECTED]-(d) RETURN a,m,d LIMIT 10
+;
+2015-10-11 08:28:36.209+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: MATCH a -[r]- b WHERE id(a) IN[282,242,286,238,243,322,332,315,250,249,337,333,307,301,267,330,321,276,176]
+AND id(b) IN[282,242,286,238,243,322,332,315,250,249,337,333,307,301,267,330,321,276,176]
+RETURN r;
+2015-10-11 14:47:19.979+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+2015-10-11 14:51:06.728+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+2015-10-11 14:55:49.353+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+CREATE (totoro:User {name:"Totoro"})
+CREATE (anhphuong)-[:Friend_With {role : 'friend'}]->(totoro)
+2015-10-11 14:57:42.090+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+CREATE (totoro:User {name:"Totoro"})
+CREATE (anhphuong)-[:Friend_With {role : 'friend'}]->(totoro)
+RETURN User.name AS User
+2015-10-11 15:00:51.785+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+CREATE (totoro:User {name:"Totoro"})
+CREATE (anhphuong)-[:Friend_With {role : 'friend'}]->(totoro)
+RETURN User
+2015-10-11 15:04:30.870+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+CREATE (totoro:User {name:"Totoro"})
+CREATE (anhphuong)-[:Friend_With {role : 'friend'}]->(totoro)
+MATCH (a)-[:Friend_With {role : 'friend'}]->(b)
+RETURN a,b;
+2015-10-11 15:04:53.398+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+CREATE (totoro:User {name:"Totoro"})
+CREATE (anhphuong)-[:Friend_With {role : 'friend'}]->(totoro)
+MATCH (a)-[:Friend_With]->(b)
+RETURN a,b;
+2015-10-11 15:06:01.624+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: CREATE (anhphuong:User {name:"Anh Phuong"})
+CREATE (totoro:User {name:"Totoro"})
+CREATE (anhphuong)-[:Friend_With {role : 'friend'}]->(totoro)
+WITH anhphuong AS a
+MATCH (a)-[:Friend_With]->(b)
+RETURN a,b;
+2015-10-11 15:06:01.773+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: MATCH a -[r]- b WHERE id(a) IN[347,346]
+AND id(b) IN[347,346]
+RETURN r;
