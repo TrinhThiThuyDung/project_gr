@@ -53,3 +53,15 @@
 14:31:15.956 [main] INFO  org.eclipse.jetty.server.Server - Started @11555ms
 2015-10-11 07:31:15.956+0000 INFO  [API] Server started on: http://localhost:7474/
 2015-10-11 07:31:15.957+0000 INFO  [API] Remote interface ready and available at [http://localhost:7474/]
+2015-10-11 19:14:56.864+0000 INFO  [API] Neo4j Server shutdown initiated by request
+02:14:56.912 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@56e350a5{HTTP/1.1}{localhost:7474}
+02:14:56.915 [Thread-13] INFO  o.e.jetty.server.ServerConnector - Stopped ServerConnector@9be54d9{SSL-HTTP/1.1}{localhost:7473}
+02:14:56.922 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@50e84188{/,null,UNAVAILABLE}
+02:14:56.927 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@75e6283c{/browser,jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-browser-2.2.5.jar!/browser,UNAVAILABLE}
+02:14:56.929 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@663de840{/db/data,null,UNAVAILABLE}
+02:14:56.930 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@fdc4138{/db/manage,null,UNAVAILABLE}
+02:14:56.931 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.w.WebAppContext@7e333c60{/webadmin,jar:file:/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/system/lib/neo4j-server-2.2.5-static-web.jar!/webadmin-html,UNAVAILABLE}
+02:14:56.932 [Thread-13] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.h.MovedContextHandler@4659579d{/,null,UNAVAILABLE}
+2015-10-11 19:14:56.940+0000 INFO  [API] Successfully shutdown Neo4j Server.
+2015-10-11 19:14:57.055+0000 INFO  [API] Successfully stopped database
+2015-10-11 19:14:57.055+0000 INFO  [API] Successfully shutdown database.

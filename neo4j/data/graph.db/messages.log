@@ -1768,3 +1768,30 @@ RETURN a,b;
 2015-10-11 15:06:01.773+0000 DEBUG [o.n.k.i.q.QueryExecutionEngine]: MATCH a -[r]- b WHERE id(a) IN[347,346]
 AND id(b) IN[347,346]
 RETURN r;
+2015-10-11 19:14:56.864+0000 INFO  [o.n.s.CommunityBootstrapper]: Neo4j Server shutdown initiated by request
+2015-10-11 19:14:56.940+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown Neo4j Server.
+2015-10-11 19:14:56.941+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Shutdown started
+2015-10-11 19:14:56.942+0000 INFO  [o.n.k.EmbeddedGraphDatabase]: Database is now unavailable
+2015-10-11 19:14:56.942+0000 DEBUG [o.n.k.EmbeddedGraphDatabase]: GC Monitor stopped. 
+2015-10-11 19:14:56.975+0000 INFO  [o.n.k.i.s.StoreFactory]: About to rotate counts store at transaction 26 to [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.a], from [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.b].
+2015-10-11 19:14:56.985+0000 INFO  [o.n.k.i.s.StoreFactory]: Successfully rotated counts store at transaction 26 to [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.a], from [/Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.counts.db.b].
+2015-10-11 19:14:57.004+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db.names, truncating at 330 vs file size 8170
+2015-10-11 19:14:57.005+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshiptypestore.db, truncating at 63 vs file size 8190
+2015-10-11 19:14:57.008+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db.names, truncating at 178 vs file size 8170
+2015-10-11 19:14:57.010+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.labeltokenstore.db, truncating at 37 vs file size 8190
+2015-10-11 19:14:57.013+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.strings, truncating at 6298 vs file size 8192
+2015-10-11 19:14:57.015+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.index.keys, truncating at 406 vs file size 8170
+2015-10-11 19:14:57.017+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.index, truncating at 106 vs file size 8190
+2015-10-11 19:14:57.020+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db.arrays, truncating at 44185 vs file size 49152
+2015-10-11 19:14:57.023+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.propertystore.db, truncating at 31754 vs file size 32636
+2015-10-11 19:14:57.024+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshipstore.db, truncating at 17296 vs file size 24480
+2015-10-11 19:14:57.029+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.nodestore.db.labels, truncating at 93 vs file size 93
+2015-10-11 19:14:57.030+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.nodestore.db, truncating at 5236 vs file size 8190
+2015-10-11 19:14:57.035+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.schemastore.db, truncating at 82 vs file size 82
+2015-10-11 19:14:57.039+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore.relationshipgroupstore.db, truncating at 54 vs file size 54
+2015-10-11 19:14:57.041+0000 DEBUG [o.n.k.i.s.StoreFactory]: Closing /Applications/XAMPP/xamppfiles/htdocs/code/neo4j/data/graph.db/neostore, truncating at 114 vs file size 8190
+2015-10-11 19:14:57.045+0000 INFO  [o.n.k.NeoStoreDataSource]: NeoStore closed
+2015-10-11 19:14:57.045+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics START ---
+2015-10-11 19:14:57.045+0000 INFO  [o.n.k.i.DiagnosticsManager]: --- STOPPING diagnostics END ---
+2015-10-11 19:14:57.055+0000 INFO  [o.n.s.d.LifecycleManagingDatabase]: Successfully stopped database
+2015-10-11 19:14:57.055+0000 INFO  [o.n.s.CommunityNeoServer]: Successfully shutdown database.
